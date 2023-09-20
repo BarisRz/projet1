@@ -20,7 +20,6 @@ Projet réalisé dans le cadre de la formation Developpeur Web de la WildCodeSch
     <img src="https://skillicons.dev/icons?i=git,js,html,css,figma&theme=light" />
   </a>
 </p>
-
 # Organisation 
 
     Trello : https://trello.com/b/xEDcQsum/projet-1-groupe-5
