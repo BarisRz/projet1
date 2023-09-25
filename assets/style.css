@@ -1,7 +1,6 @@
 :root {
     --primarycolor: rgba(53, 95, 133, 1);
     --secondarycolor: rgba(244, 247, 248, 1);
-
 }
 
 body {
@@ -11,40 +10,47 @@ body {
 }
 
 /*section carrousel + header */
+
 header {
     background: linear-gradient(180deg, var(--primarycolor) 0%, var(--secondarycolor)100%);
 }
 
 nav {
-    height: 5vh;
     display: flex;
     justify-content: space-between;
 }
 
-nav>* {
-    width: 4rem;
+.icon {
+    height: 4rem;
     color: white;
     margin: 1rem 1rem;
-    transform: scale(1.5);
 }
 
 .carrousel {
-    height: 95vh;
+    height: 100vh;
 }
+
 
 /*fin section carrousel + header */
 
-/*section grid */
-.row{
-    display: -ms-flexbox; /* IE10 */
-  display: flex;
-  -ms-flex-wrap: wrap; /* IE10 */
-  flex-wrap: wrap;
-  padding: 0 4px;
+main {
+    background-color: var(--secondarycolor);
 }
+
+/*section grid */
+.row {
+    display: -ms-flexbox;
+    /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap;
+    /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
 /* Create four equal columns that sits next to each other */
 
-.column{
+.column {
     -ms-flex: 25%;
     flex: 25%;
     max-width: 23vw;
@@ -52,9 +58,9 @@ nav>* {
     margin: 0 auto;
 }
 
-.column img{
-    margin-top: 8px; 
-    vertical-align: middle; 
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
     width: 100%;
 }
 
