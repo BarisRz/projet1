@@ -1,3 +1,13 @@
-body {
-   
-}
+ 
+ footer {
+   background-color:lightslategray;
+   padding: 16px;
+   border: 16px;
+   margin: 0px; 
+ }
+
+ footer ul {
+    display: flex;
+    list-style-type: none;
+    gap: 20rem;
+    }
