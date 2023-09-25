@@ -1,8 +1,40 @@
-body{
-    padding: 0;
-    margin: 0; 
+:root {
+    --primarycolor: rgba(53, 95, 133, 1);
+    --secondarycolor: rgba(244, 247, 248, 1);
+
 }
 
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*section carrousel + header */
+header {
+    background: linear-gradient(180deg, var(--primarycolor) 0%, var(--secondarycolor)100%);
+}
+
+nav {
+    height: 5vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav>* {
+    width: 4rem;
+    color: white;
+    margin: 1rem 1rem;
+    transform: scale(1.5);
+}
+
+.carrousel {
+    height: 95vh;
+}
+
+/*fin section carrousel + header */
+
+/*section grid */
 .row{
     display: -ms-flexbox; /* IE10 */
   display: flex;
@@ -25,3 +57,5 @@ body{
     vertical-align: middle; 
     width: 100%;
 }
+
+/*fin section grid */
