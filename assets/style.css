@@ -25,7 +25,7 @@ nav>* {
     width: 4rem;
     color: white;
     margin: 1rem 1rem;
-    transform: scale(1.5);
+    transform: scale(15);
 }
 
 .carrousel {
@@ -43,11 +43,14 @@ nav>* {
   padding: 0 4px;
 }
 /* Create four equal columns that sits next to each other */
-
+main{
+    background-color: var(--secondarycolor);
+}
 .column{
     -ms-flex: 25%;
     flex: 25%;
     max-width: 23vw;
+    max-height: 10%;
     padding: 0 4px;
     margin: 0 auto;
 }
