@@ -69,13 +69,14 @@ main {
 
 /* Début Footer */
 footer {
-   background-color:lightslategray;
-   padding: 16px; 
- }
+    background-color: lightslategray;
+    padding: 16px;
+}
 
- footer ul {
+footer ul {
     display: flex;
     list-style-type: none;
     gap: 20rem;
-    }
+}
+
 /* Fin Footer */
