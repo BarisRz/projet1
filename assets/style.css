@@ -65,3 +65,16 @@ main {
 }
 
 /*fin section grid */
+
+/* Début Footer */
+footer {
+   background-color:lightslategray;
+   padding: 16px; 
+ }
+
+ footer ul {
+    display: flex;
+    list-style-type: none;
+    gap: 20rem;
+    }
+/* Fin Footer */
