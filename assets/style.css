@@ -59,15 +59,20 @@ main {
 .column {
     -ms-flex: 25%;
     flex: 25%;
-    max-width: 23vw;
-    padding: 0 4px;
+    max-width: 24%;
     margin: 0 auto;
+    overflow: hidden;
 }
 
 .column img {
     margin-top: 8px;
     vertical-align: middle;
     width: 100%;
+    transition: .3s;
+}
+
+.column img:hover {
+    transform: scale(1.1);
 }
 
 /*fin section grid */
