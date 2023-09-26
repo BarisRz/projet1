@@ -25,6 +25,11 @@ nav {
     height: 4rem;
     color: white;
     margin: 1rem 1rem;
+    transition: 0.3s;
+}
+
+.icon:hover {
+    filter: drop-shadow(0 0 0.3rem black);
 }
 
 .carrousel {
