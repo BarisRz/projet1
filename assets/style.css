@@ -1,9 +1,6 @@
- 
- footer {
+footer {
    background-color:lightslategray;
-   padding: 16px;
-   border: 16px;
-   margin: 0px; 
+   padding: 16px; 
  }
 
  footer ul {
