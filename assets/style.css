@@ -34,8 +34,15 @@ nav {
 
 .carrousel {
     height: 100vh;
+    display: flex;
+    gap: 1rem;
+    margin: 5vh 1rem 2rem 1rem;
 }
 
+.carrousel * {
+    width: 25%;
+    height: 70%;
+}
 
 /*fin section carrousel + header */
 
