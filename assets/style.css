@@ -1,67 +1,105 @@
 :root {
     --primarycolor: rgba(53, 95, 133, 1);
     --secondarycolor: rgba(244, 247, 248, 1);
-
 }
 
 body {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    background-color: var(--secondarycolor);
 }
 
 /*section carrousel + header */
+
 header {
     background: linear-gradient(180deg, var(--primarycolor) 0%, var(--secondarycolor)100%);
 }
 
 nav {
-    height: 5vh;
     display: flex;
     justify-content: space-between;
 }
 
-nav>* {
-    width: 4rem;
+.icon {
+    height: 4rem;
     color: white;
     margin: 1rem 1rem;
-    transform: scale(15);
+    transition: 0.3s;
+}
+
+.icon:hover {
+    filter: drop-shadow(0 0 0.3rem black);
 }
 
 .carrousel {
-    height: 95vh;
+    height: 100vh;
+    display: flex;
+    gap: 1rem;
+    margin: 5vh 1rem 2rem 1rem;
+}
+
+.carrousel * {
+    width: 25%;
+    height: 70%;
 }
 
 /*fin section carrousel + header */
 
-/*section grid */
-.row{
-    display: -ms-flexbox; /* IE10 */
-  display: flex;
-  -ms-flex-wrap: wrap; /* IE10 */
-  flex-wrap: wrap;
-  padding: 0 4px;
-}
-/* Create four equal columns that sits next to each other */
-main{
+main {
     background-color: var(--secondarycolor);
 }
-.column{
-    -ms-flex: 25%;
-    flex: 25%;
-    max-width: 23vw;
-    max-height: 10%;
+
+/*section grid */
+.row {
+    display: -ms-flexbox;
+    /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap;
+    /* IE10 */
+    flex-wrap: wrap;
     padding: 0 4px;
-    margin: 0 auto;
 }
 
-.column img{
-    margin-top: 8px; 
-    vertical-align: middle; 
+/* Create four equal columns that sits next to each other */
+
+.column {
+    -ms-flex: 25%;
+    flex: 25%;
+    max-width: 24%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
     width: 100%;
+    transition: .3s;
+}
+
+.column img:hover {
+    transform: scale(1.1);
 }
 
 /*fin section grid */
+
+
+/*fin section grid */
+
+/* Début Footer */
+footer {
+    background-color: lightslategray;
+    padding: 16px;
+}
+
+footer ul {
+    display: flex;
+    list-style-type: none;
+    gap: 20rem;
+}
+
+/* Fin Footer */
 
 /* Responsive */
 
