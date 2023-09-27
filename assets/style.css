@@ -84,6 +84,9 @@ main {
 
 /*fin section grid */
 
+
+/*fin section grid */
+
 /* Début Footer */
 footer {
     background-color: lightslategray;
@@ -97,3 +100,13 @@ footer ul {
 }
 
 /* Fin Footer */
+
+/* Responsive */
+
+@media screen and (max-width: 600px) {
+    .column {
+      -ms-flex: 100%;
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
