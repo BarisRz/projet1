@@ -34,7 +34,7 @@ const imgCarrousel = [
     "assets/img/carrousel/morgane.jpg",
     "assets/img/carrousel/oceane.JPG",
     "assets/img/carrousel/Pierre.png",
-    "assets/img/carrousel/raphael.jpg",
+    "assets/img/carrousel/raphael.jpeg",
     "assets/img/carrousel/Samuel.jpg",
     "assets/img/carrousel/sebastien.jpg",
     "assets/img/carrousel/souhir.jpg",
