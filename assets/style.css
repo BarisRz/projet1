@@ -62,6 +62,36 @@ button {
     margin-top: 10px;
 }
 
+button#prevButton {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button#prevButton:hover {
+    background-color: #0056b3;
+}
+
+button#nextButton {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button#nextButton:hover {
+    background-color: #0056b3;
+}
+
 /*fin section carrousel + header */
 
 main {
