@@ -1,19 +1,3 @@
-/**
- *  const imgCarrousel = [
-    "img/carrousel/image1.jpeg",
-    "img/carrousel/image2.jpg",
-    "img/carrousel/image3.jpg",
-    "img/carrousel/image4.JPG"
-];
- 
-
-
-const carrousel = document.querySelectorAll(".img-carrousel");
-for (let i = 0; i < carrousel.length; i++) {
-    carrousel[i].style.backgroundImage = `url(${imgCarrousel[i]})`;
-}
-*/
-
 // carousel //
 
 const imgCarrousel = [
@@ -34,7 +18,7 @@ const imgCarrousel = [
     "assets/img/carrousel/morgane.jpg",
     "assets/img/carrousel/oceane.JPG",
     "assets/img/carrousel/Pierre.png",
-    "assets/img/carrousel/raphael.jpg",
+    "assets/img/carrousel/raphael.jpeg",
     "assets/img/carrousel/Samuel.jpg",
     "assets/img/carrousel/sebastien.jpg",
     "assets/img/carrousel/souhir.jpg",
@@ -55,7 +39,7 @@ imgCarrousel.forEach((element) => {
 document.addEventListener("DOMContentLoaded", function () {
     const prevButton = document.getElementById("prevButton");
     const nextButton = document.getElementById("nextButton");
-    const slideWidth = document.querySelector(".carousel-slide").clientWidth;
+    const slideWidth = document.querySelector(".carousel").clientWidth;
     let currentIndex = 0;
 
     function goToSlide(index) {
@@ -66,6 +50,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
         const offset = -index * slideWidth;
+        console.log(offset)
         carouselContainer.style.transform = `translateX(${offset}px)`;
         currentIndex = index;
     }
@@ -79,7 +64,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     // Automatiquement passer à la diapositive suivante toutes les 3 secondes (facultatif)
-    setInterval(() => {
+    /* setInterval(() => {
         goToSlide(currentIndex + 1);
-    }, 3000);
+    }, 3000); */
 });
