@@ -32,16 +32,34 @@ nav {
     filter: drop-shadow(0 0 0.3rem black);
 }
 
-.carrousel {
-    height: 100vh;
+.theContainer {
     display: flex;
-    gap: 1rem;
-    margin: 5vh 1rem 2rem 1rem;
+    justify-content: center;
 }
 
-.carrousel * {
-    width: 25%;
-    height: 70%;
+.carousel {
+    width: 400px;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+}
+
+.carousel-container {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+}
+
+.carousel-slide {
+    flex: 0 0 100%;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+button {
+    margin-top: 10px;
 }
 
 /*fin section carrousel + header */
@@ -51,38 +69,71 @@ main {
 }
 
 /*section grid */
-.row {
-    display: -ms-flexbox;
-    /* IE10 */
-    display: flex;
-    -ms-flex-wrap: wrap;
-    /* IE10 */
-    flex-wrap: wrap;
-    padding: 0 4px;
-}
 
-/* Create four equal columns that sits next to each other */
-
-.column {
-    -ms-flex: 25%;
-    flex: 25%;
-    max-width: 24%;
+.cards{
+    width: 70vw;
     margin: 0 auto;
-    overflow: hidden;
 }
 
-.column img {
-    margin-top: 8px;
-    vertical-align: middle;
+
+.grid img{
     width: 100%;
-    transition: .3s;
+    height: 100%;
+    mix-blend-mode:luminosity;
+    object-fit: cover;   
 }
 
-.column img:hover {
-    transform: scale(1.1);
+.grid{
+    width: 100%;
+    display: grid;
+    grid-template-areas: 
+    "temp1 temp1 temp2 temp3 temp3"
+    "temp1 temp1 temp2 temp7 temp7"
+    "temp5 temp4 temp2 temp7 temp7"
+    "temp5 temp4 temp2 temp7 temp7"
+    "temp5 temp6 temp6 temp7 temp7";
+
+   /*  grid-template-rows: repeat(4, 150px); */
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 6px;
+    overflow:hidden;
+    object-fit: fill;
+    margin-top: 6px;
 }
 
-/*fin section grid */
+
+
+img:hover{
+    transform: scale(1.05);
+    object-fit: cover;
+    overflow:hidden;
+    box-shadow: inset 0 0 0 var(--spr, calc(.5*(1 - var(--hov))*var(--l))) hsl(0, 0%, 40%);
+    mix-blend-mode: multiply;
+    transition: 3s;
+}
+
+
+.temp1{
+    grid-area: temp1;
+}
+.temp2{
+    grid-area: temp2;
+}
+.temp3{
+    grid-area: temp3;
+}
+.temp4{
+    grid-area: temp4;
+}
+.temp5{
+    grid-area: temp5;
+}
+.temp6{
+    grid-area: temp6;
+}
+.temp7{
+    grid-area: temp7;
+}
 
 
 /*fin section grid */
@@ -107,9 +158,8 @@ footer ul {
 
 @media screen and (max-width: 600px) {
     .column {
-      -ms-flex: 100%;
-      flex: 100%;
-      max-width: 100%;
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
     }
-  }
-
+}
