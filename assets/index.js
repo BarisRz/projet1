@@ -15,6 +15,8 @@ for (let i = 0; i < carrousel.length; i++) {
 */
 // carousel //
 
+const carouselContainer = document.querySelector(".carousel-container")
+
 document.addEventListener("DOMContentLoaded", function () {
     const carouselContainer = document.querySelector(".carousel-container");
     const prevButton = document.getElementById("prevButton");
