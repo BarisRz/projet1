@@ -70,73 +70,80 @@ main {
 
 /*section grid */
 
-.cards{
+.cards {
     width: 70vw;
     margin: 0 auto;
 }
 
 
-.grid img{
+.grid img {
     width: 100%;
     height: 100%;
-    mix-blend-mode:luminosity;
-    object-fit: cover;   
+    mix-blend-mode: luminosity;
+    object-fit: cover;
 }
-article{
+
+article {
     display: inline-block;
     overflow: hidden;
 }
 
-.grid{
+.grid {
     width: 100%;
     display: grid;
-    grid-template-areas: 
-    "temp1 temp1 temp2 temp3 temp3"
-    "temp1 temp1 temp2 temp7 temp7"
-    "temp5 temp4 temp2 temp7 temp7"
-    "temp5 temp4 temp2 temp7 temp7"
-    "temp5 temp6 temp6 temp7 temp7";
+    grid-template-areas:
+        "temp1 temp1 temp2 temp3 temp3"
+        "temp1 temp1 temp2 temp7 temp7"
+        "temp5 temp4 temp2 temp7 temp7"
+        "temp5 temp4 temp2 temp7 temp7"
+        "temp5 temp6 temp6 temp7 temp7";
 
-   /*  grid-template-rows: repeat(4, 150px); */
+    /*  grid-template-rows: repeat(4, 150px); */
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 6px;
-    overflow:hidden;
+    overflow: hidden;
     object-fit: fill;
     margin-top: 6px;
 }
 
 
 
-.grid img:hover{
+.grid img:hover {
     transform: scale(1.05);
     object-fit: cover;
-    overflow:hidden;
+    overflow: hidden;
     box-shadow: inset 0 0 0 var(--spr, calc(.5*(1 - var(--hov))*var(--l))) hsl(0, 0%, 40%);
     mix-blend-mode: multiply;
     transition: 3s;
-   
+
 }
 
 
-.temp1{
+.temp1 {
     grid-area: temp1;
 }
-.temp2{
+
+.temp2 {
     grid-area: temp2;
 }
-.temp3{
+
+.temp3 {
     grid-area: temp3;
 }
-.temp4{
+
+.temp4 {
     grid-area: temp4;
 }
-.temp5{
+
+.temp5 {
     grid-area: temp5;
 }
-.temp6{
+
+.temp6 {
     grid-area: temp6;
 }
-.temp7{
+
+.temp7 {
     grid-area: temp7;
 }
 
@@ -146,48 +153,49 @@ article{
 /* Début Footer */
 footer {
     background-color: rgb(154, 186, 216);
-    border: 10px solid;
+    padding: 1rem;
     margin: 0px;
     color: whitesmoke;
 }
-   
+
 footer ul {
     display: flex;
     list-style-type: none;
     justify-content: space-around;
-    font-family:'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
+
 /* Fin Footer */
 
 /* Responsive */
 
 @media screen and (max-width: 600px) {
-   
-    .cards{
+
+    .cards {
         width: 95vw;
         margin: 0 auto;
     }
 
-    .grid{
+    .grid {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-areas:
-        "temp1 temp1"
-        "temp2 temp3"
-        "temp4 temp5"
-        "temp6 temp7"
+            "temp1 temp1"
+            "temp2 temp3"
+            "temp4 temp5"
+            "temp6 temp7"
     }
 
-    .grid img{
+    .grid img {
         height: 25vh;
-        object-fit:cover;
+        object-fit: cover;
         mix-blend-mode: normal;
     }
 
-    .grid img:hover{
+    .grid img:hover {
         transform: none;
         box-shadow: none;
     }
- 
-   
+
+
 }
