@@ -32,16 +32,34 @@ nav {
     filter: drop-shadow(0 0 0.3rem black);
 }
 
-.carrousel {
-    height: 100vh;
+.theContainer {
     display: flex;
-    gap: 1rem;
-    margin: 5vh 1rem 2rem 1rem;
+    justify-content: center;
 }
 
-.carrousel * {
-    width: 25%;
-    height: 70%;
+.carousel {
+    width: 400px;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+}
+
+.carousel-container {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+}
+
+.carousel-slide {
+    flex: 0 0 100%;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+button {
+    margin-top: 10px;
 }
 
 /*fin section carrousel + header */
@@ -105,8 +123,8 @@ footer ul {
 
 @media screen and (max-width: 600px) {
     .column {
-      -ms-flex: 100%;
-      flex: 100%;
-      max-width: 100%;
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
     }
-  }
+}
