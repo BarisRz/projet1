@@ -25,12 +25,24 @@ nav {
     height: 4rem;
     color: white;
     margin: 1rem 1rem;
+    transition: 0.3s;
+}
+
+.icon:hover {
+    filter: drop-shadow(0 0 0.3rem black);
 }
 
 .carrousel {
     height: 100vh;
+    display: flex;
+    gap: 1rem;
+    margin: 5vh 1rem 2rem 1rem;
 }
 
+.carrousel * {
+    width: 25%;
+    height: 70%;
+}
 
 /*fin section carrousel + header */
 
@@ -54,15 +66,20 @@ main {
 .column {
     -ms-flex: 25%;
     flex: 25%;
-    max-width: 23vw;
-    padding: 0 4px;
+    max-width: 24%;
     margin: 0 auto;
+    overflow: hidden;
 }
 
 .column img {
     margin-top: 8px;
     vertical-align: middle;
     width: 100%;
+    transition: .3s;
+}
+
+.column img:hover {
+    transform: scale(1.1);
 }
 
 /*fin section grid */
