@@ -13,12 +13,46 @@ for (let i = 0; i < carrousel.length; i++) {
     carrousel[i].style.backgroundImage = `url(${imgCarrousel[i]})`;
 }
 */
+
 // carousel //
 
-const carouselContainer = document.querySelector(".carousel-container")
+const imgCarrousel = [
+    "assets/img/Anthony.png",
+    "assets/img/Baptiste.jpg",
+    "assets/img/Baris.jpeg",
+    "assets/img/christophe_bruno_.png",
+    "assets/img/clement.jpg",
+    "assets/img/diogo_cabral.png",
+    "assets/img/Doriane.jpg",
+    "assets/img/Elie.jpg",
+    "assets/img/flavien.jpg",
+    "assets/img/francois.jpg",
+    "assets/img/ghislain.jpg",
+    "assets/img/hugo_durand_.png",
+    "assets/img/jordan.jpeg",
+    "assets/img/mehdi.jpg",
+    "assets/img/morgane.jpg",
+    "assets/img/oceane.JPG",
+    "assets/img/Pierre.png",
+    "assets/img/raphael_foulon-binet.png",
+    "assets/img/Samuel.jpg",
+    "assets/img/sebastien.jpg",
+    "assets/img/souhir_farjallah.png",
+    "assets/img/Tristan.jpg"
+];
+const carouselContainer = document.querySelector(".carousel-container");
+
+imgCarrousel.forEach((element) => {
+    const carouselSlide = document.createElement("div");
+    carouselSlide.classList.add("carousel-slide");
+    carouselContainer.appendChild(carouselSlide);
+    const imageInSlide = document.createElement('img');
+    imageInSlide.src = element;
+    imageInSlide.alt = element;
+    carouselSlide.appendChild(imageInSlide);
+})
 
 document.addEventListener("DOMContentLoaded", function () {
-    const carouselContainer = document.querySelector(".carousel-container");
     const prevButton = document.getElementById("prevButton");
     const nextButton = document.getElementById("nextButton");
     const slideWidth = document.querySelector(".carousel-slide").clientWidth;
@@ -26,8 +60,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function goToSlide(index) {
         if (index < 0) {
-            index = 23; // Si on est au début, revenir à la dernière image
-        } else if (index > 23) {
+            index = imgCarrousel.length - 1; // Si on est au début, revenir à la dernière image
+        } else if (index > imgCarrousel.length - 1) {
             index = 0; // Si on est à la fin, revenir à la première image
         }
 
