@@ -68,3 +68,4 @@ document.addEventListener("DOMContentLoaded", function () {
         goToSlide(currentIndex + 1);
     }, 3000); */
 });
+
