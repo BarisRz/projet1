@@ -25,11 +25,7 @@ function displayHTML(arrayOfUsers) {
     let grid = '';
     // ici, breakLoop permet d'arreter la boucle au bout de x fois pour 
     // avoir l'interface grid qui fonctionne correctement.
-    let breakLoop = 7;
-    if (arrayOfUsers.length < breakLoop) {
-        breakLoop = arrayOfUsers.length;
-    }
-
+    const breakLoop = arrayOfUsers.length < 7 ? arrayOfUsers.length : 7;
     for (let i = 0; i < breakLoop; i++) {
         grid += createCard(arrayOfUsers[i], i)
     }
