@@ -1,4 +1,5 @@
 // carousel //
+import { displayHTML, createCard } from "./displayCard.js";
 
 const imgCarrousel = [
     "assets/img/carrousel/Anthony.png",
@@ -68,3 +69,5 @@ document.addEventListener("DOMContentLoaded", function () {
         goToSlide(currentIndex + 1);
     }, 3000); */
 });
+
+/* DEBUT SEARCHBAR */

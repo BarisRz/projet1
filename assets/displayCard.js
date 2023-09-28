@@ -1,6 +1,6 @@
-function createCard(card, i){
+function createCard(card, i) {
     const html = `
-    <article class="temp${i+1}">
+    <article class="temp${i + 1}">
         <img class="grid-photo" src="${card.img}" alt="">
         <div class="card">
             <h2>${card.name}</h2>
@@ -18,7 +18,7 @@ function createCard(card, i){
         </div>
     </article>
  `;
- return html
+    return html
 }
 
 function displayHTML(arrayOfUsers) {
@@ -27,10 +27,10 @@ function displayHTML(arrayOfUsers) {
     // avoir l'interface grid qui fonctionne correctement.
     const breakLoop = 7;
 
-    for(let i =0; i < breakLoop; i++) {
+    for (let i = 0; i < breakLoop; i++) {
         grid += createCard(arrayOfUsers[i], i)
     }
     return grid;
 }
 
-export default displayHTML;
+export { displayHTML, createCard };
