@@ -10,6 +10,7 @@ function createCard(card, i) {
             <p>${card.hobby1}</p>
             <p>${card.hobby2}</p> 
             <p>${card.hobby3}</p> 
+            <p>${card.hobby3}</p> 
             <a href="${card.instagram}"><img src="./assets/instagram.svg" alt="" class="grid-icon"></a>
             <a href="${card.linkedin}"><img src="./assets/linkedin.svg" alt="" class="grid-icon"></a>
             <a href="${card.email}"><img src="./assets/envelope-solid.svg" alt="" class="grid-icon"></a>
@@ -24,7 +25,7 @@ function displayHTML(arrayOfUsers) {
     let grid = '';
     // ici, breakLoop permet d'arreter la boucle au bout de x fois pour 
     // avoir l'interface grid qui fonctionne correctement.
-    const breakLoop = 3;
+    const breakLoop = 7;
 
     for (let i = 0; i < breakLoop; i++) {
         grid += createCard(arrayOfUsers[i], i)
