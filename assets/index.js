@@ -23,7 +23,9 @@ const imgCarrousel = [
     "assets/img/carrousel/Samuel.png",
     "assets/img/carrousel/Sebastien.png",
     "assets/img/carrousel/Souhir.jpeg",
-    "assets/img/carrousel/Tristan.png"
+    "assets/img/carrousel/Jonathan.png",
+    "assets/img/carrousel/Jeremy.png",
+    "assets/img/carrousel/Jordan.png",
 ];
 const carouselContainer = document.querySelector(".carousel-container");
 
