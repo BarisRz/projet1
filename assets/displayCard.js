@@ -10,7 +10,7 @@ function createCard(card, i) {
             <p>${card.hobby1}</p>
             <p>${card.hobby2}</p> 
             <p>${card.hobby3}</p> 
-            <p>${card.hobby3}</p> 
+            <p>${card.hobby4}</p> 
             <a href="${card.instagram}"><img src="./assets/instagram.svg" alt="" class="grid-icon"></a>
             <a href="${card.linkedin}"><img src="./assets/linkedin.svg" alt="" class="grid-icon"></a>
             <a href="${card.email}"><img src="./assets/envelope-solid.svg" alt="" class="grid-icon"></a>
