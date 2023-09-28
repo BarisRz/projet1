@@ -2,7 +2,7 @@
  * Appel des fichiers externes
  */
 import { gridOne, gridTwo, gridThree, gridFour } from "./users.js";
-import displayHTML from "./displayCard.js";
+import { displayHTML } from "./displayCard.js";
 
 /**
  * J'accède aux éléments de mon frontend
