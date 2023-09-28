@@ -2,27 +2,27 @@
 
 const imgCarrousel = [
     "assets/img/carrousel/Anthony.png",
-    "assets/img/carrousel/Baptiste.jpg",
-    "assets/img/carrousel/Baris.jpeg",
-    "assets/img/carrousel/christophe.jpg",
-    "assets/img/carrousel/clement.jpg",
-    "assets/img/carrousel/diogo.jpg",
-    "assets/img/carrousel/Doriane.jpg",
-    "assets/img/carrousel/Elie.jpg",
-    "assets/img/carrousel/flavien.jpg",
-    "assets/img/carrousel/francois.jpg",
-    "assets/img/carrousel/ghislain.jpg",
-    "assets/img/carrousel/hugo.jpg",
-    "assets/img/carrousel/jordan.jpeg",
-    "assets/img/carrousel/mehdi.jpg",
-    "assets/img/carrousel/morgane.jpg",
-    "assets/img/carrousel/oceane.JPG",
+    "assets/img/carrousel/Baptiste.png",
+    "assets/img/carrousel/Baris.png",
+    "assets/img/carrousel/Christophe.jpeg",
+    "assets/img/carrousel/Clement.png",
+    "assets/img/carrousel/Diogo.jpeg",
+    "assets/img/carrousel/Doriane.png",
+    "assets/img/carrousel/Elie.png",
+    "assets/img/carrousel/Flavien.png",
+    "assets/img/carrousel/Francois.png",
+    "assets/img/carrousel/Ghislain.png",
+    "assets/img/carrousel/Hugo.jpeg",
+    "assets/img/carrousel/Jordan.png",
+    "assets/img/carrousel/Medhi.png",
+    "assets/img/carrousel/Morganne.png",
+    "assets/img/carrousel/Oceane.png",
     "assets/img/carrousel/Pierre.png",
-    "assets/img/carrousel/raphael.jpeg",
-    "assets/img/carrousel/Samuel.jpg",
-    "assets/img/carrousel/sebastien.jpg",
-    "assets/img/carrousel/souhir.jpg",
-    "assets/img/carrousel/Tristan.jpg"
+    "assets/img/carrousel/Raphael .jpeg",
+    "assets/img/carrousel/Samuel.png",
+    "assets/img/carrousel/Sebastien.png",
+    "assets/img/carrousel/Souhir.jpeg",
+    "assets/img/carrousel/Tristan.png"
 ];
 const carouselContainer = document.querySelector(".carousel-container");
 
@@ -64,7 +64,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     // Automatiquement passer à la diapositive suivante toutes les 3 secondes (facultatif)
-    /* setInterval(() => {
+    setInterval(() => {
         goToSlide(currentIndex + 1);
-    }, 3000); */
+    }, 3000);
 });

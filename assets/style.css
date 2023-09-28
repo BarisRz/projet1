@@ -167,13 +167,13 @@ article {
 
 /*fin section grid */
 /* carte déroulantes */
-.card{
-    
-}
-.grid-icon{
+.card {}
+
+.grid-icon {
     width: 20px !important;
     height: 20px;
 }
+
 /* fin carte déroulantes */
 /* Début Footer */
 footer {
