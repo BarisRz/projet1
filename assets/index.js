@@ -24,8 +24,7 @@ const imgCarrousel = [
     "assets/img/carrousel/Sebastien.png",
     "assets/img/carrousel/Souhir.jpeg",
     "assets/img/carrousel/Jonathan.png",
-    "assets/img/carrousel/Jeremy.png",
-    "assets/img/carrousel/Jordan.png",
+    "assets/img/carrousel/Jeremy.png"
 ];
 const carouselContainer = document.querySelector(".carousel-container");
 
@@ -67,9 +66,9 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     // Automatiquement passer à la diapositive suivante toutes les 3 secondes (facultatif)
-    /* setInterval(() => {
+    setInterval(() => {
         goToSlide(currentIndex + 1);
-    }, 3000); */
+    }, 3000);
 });
 
 /* DEBUT SEARCHBAR */

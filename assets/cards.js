@@ -10,6 +10,9 @@ import { displayHTML } from "./displayCard.js";
 const grids = document.querySelectorAll(".grid");
 
 let copyArr = gridOne;
+let copyArr2 = gridTwo;
+let copyArr3 = gridThree;
+let copyArr4 = gridFour;
 const search = document.querySelector(".search-input");
 
 function scrollToAnchor() {
@@ -27,18 +30,20 @@ function scrollToAnchor() {
 search.addEventListener("keyup", (event) => {
     const searchValue = search.value.toLocaleLowerCase();
     copyArr = gridOne.filter((wilder) => wilder.name.toLocaleLowerCase().includes(searchValue));
-    /*     console.log("SEPARATION"); PLEIN DE TEST POUR DEBUG
-        console.log(searchValue);
-        console.log(copyArr);
-        console.log(gridOne); */
     grids[0].innerHTML = displayHTML(copyArr);
+    copyArr2 = gridTwo.filter((wilder) => wilder.name.toLocaleLowerCase().includes(searchValue));
+    grids[1].innerHTML = displayHTML(copyArr2);
+    copyArr2 = gridThree.filter((wilder) => wilder.name.toLocaleLowerCase().includes(searchValue));
+    /* grids[2].innerHTML = displayHTML(copyArr3);
+    copyArr2 = gridFour.filter((wilder) => wilder.name.toLocaleLowerCase().includes(searchValue));
+    grids[3].innerHTML = displayHTML(copyArr4); */
     if (event.keyCode === 13) {
         scrollToAnchor();
     }
 });
 
 
-grids[0].innerHTML = displayHTML(gridOne)
-grids[1].innerHTML = displayHTML(gridTwo)
-grids[2].innerHTML = displayHTML(gridThree) 
-grids[3].innerHTML = displayHTML(gridFour) 
+grids[0].innerHTML = displayHTML(gridOne);
+grids[1].innerHTML = displayHTML(gridTwo);
+/* grids[2].innerHTML = displayHTML(gridThree);
+grids[3].innerHTML = displayHTML(gridFour); */
