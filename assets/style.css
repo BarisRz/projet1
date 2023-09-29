@@ -20,7 +20,41 @@ header {
 nav {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
+
+/* barre de recherche */
+
+.search-container {
+    display: flex;
+    align-items: center;
+}
+
+.search-input {
+    margin-right: 0.5rem;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(178, 206, 232); /* fond de la barre de recherche */
+    color: var(--primarycolor); 
+    font-size: 16px;
+    outline: none; 
+    transition: background-color 0.5s, box-shadow 0.5s;
+}
+
+                    /* un effet de survol */
+.search-input:hover {
+    background-color: whitesmoke;
+    box-shadow: 0 0 5px rgba(83, 83, 83, 0.5);
+}
+
+.search-input:focus {
+    background-color: rgb(255, 255, 255);
+    box-shadow: 10px 5px 5px rgba(126, 147, 179, 0.8);
+}
+
+
+/* fin barre de recherche */
 
 .icon {
     height: 4rem;
