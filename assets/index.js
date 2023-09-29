@@ -66,9 +66,9 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     // Automatiquement passer à la diapositive suivante toutes les 3 secondes (facultatif)
-    /* setInterval(() => {
+    setInterval(() => {
         goToSlide(currentIndex + 1);
-    }, 3000); */
+    }, 3000);
 });
 
 /* DEBUT SEARCHBAR */
