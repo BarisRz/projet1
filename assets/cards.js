@@ -9,10 +9,7 @@ import { displayHTML } from "./displayCard.js";
  */
 const grids = document.querySelectorAll(".grid");
 
-let copyArr = gridOne;
-let copyArr2 = gridTwo;
-let copyArr3 = gridThree;
-let copyArr4 = gridFour;
+let copyArr = gridOne, copyArr2 = gridTwo, copyArr3 = gridThree, copyArr4 = gridFour;
 const search = document.querySelector(".search-input");
 
 function scrollToAnchor() {
@@ -42,6 +39,10 @@ search.addEventListener("keyup", (event) => {
         scrollToAnchor();
     }
 });
+
+search.addEventListener("change", (event) => {
+    console.log(event);
+})
 
 
 grids[0].innerHTML = displayHTML(gridOne);
