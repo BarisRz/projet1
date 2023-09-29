@@ -37,7 +37,8 @@ search.addEventListener("keyup", (event) => {
     }
 });
 
+
 grids[0].innerHTML = displayHTML(gridOne)
-// grids[1].innerHTML = displayHTML(gridTwo)
-// grids[2].innerHTML = displayHTML(gridThree)
-// grids[3].innerHTML = displayHTML(gridFour)
+grids[1].innerHTML = displayHTML(gridTwo)
+grids[2].innerHTML = displayHTML(gridThree) 
+grids[3].innerHTML = displayHTML(gridFour) 
