@@ -3,6 +3,7 @@ import { displayHTML, createCard } from "./displayCard.js";
 
 const imgCarrousel = [
     "assets/img/carrousel/Anthony.png",
+    "assets/img/carrousel/Samuel.png",
     "assets/img/carrousel/Baptiste.png",
     "assets/img/carrousel/Baris.png",
     "assets/img/carrousel/Christophe.jpeg",
@@ -20,7 +21,6 @@ const imgCarrousel = [
     "assets/img/carrousel/Oceane.png",
     "assets/img/carrousel/Pierre.png",
     "assets/img/carrousel/Raphael .jpeg",
-    "assets/img/carrousel/Samuel.png",
     "assets/img/carrousel/Sebastien.png",
     "assets/img/carrousel/Souhir.jpeg",
     "assets/img/carrousel/Jonathan.png",
