@@ -28,14 +28,15 @@ function scrollToAnchor() {
 }
 
 search.addEventListener("keyup", (event) => {
-    const searchValue = search.value.toLocaleLowerCase();
-    copyArr = gridOne.filter((wilder) => wilder.name.toLocaleLowerCase().includes(searchValue));
+    const searchValue = search.value.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLocaleLowerCase();
+    console.log(searchValue);
+    copyArr = gridOne.filter((wilder) => wilder.name.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLocaleLowerCase().includes(searchValue));
     grids[0].innerHTML = displayHTML(copyArr);
-    copyArr2 = gridTwo.filter((wilder) => wilder.name.toLocaleLowerCase().includes(searchValue));
+    copyArr2 = gridTwo.filter((wilder) => wilder.name.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLocaleLowerCase().includes(searchValue));
     grids[1].innerHTML = displayHTML(copyArr2);
-    copyArr3 = gridThree.filter((wilder) => wilder.name.toLocaleLowerCase().includes(searchValue));
+    copyArr3 = gridThree.filter((wilder) => wilder.name.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLocaleLowerCase().includes(searchValue));
     grids[2].innerHTML = displayHTML(copyArr3);
-    copyArr4 = gridFour.filter((wilder) => wilder.name.toLocaleLowerCase().includes(searchValue));
+    copyArr4 = gridFour.filter((wilder) => wilder.name.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLocaleLowerCase().includes(searchValue));
     grids[3].innerHTML = displayHTML(copyArr4);
     if (event.keyCode === 13) {
         scrollToAnchor();
