@@ -173,7 +173,7 @@ const gridTwo = [
         name: "MIEGER Jordan",
         age: "23 ans",
         citation: `"C'est quand un moustique se pose sur vos testicules qu'on s'aperçoit qu'on ne peut pas tout régler avec la violence..."`,
-        objectif: "Objectif ➡️ Développeur full-stack en entreprise puis free-lance",
+        objectif: "Objectif ➡️ Devenir bon à Fifa",
         hobby1: "Sport 🏋️",
         hobby2: "Foot ⚽️",
         hobby3: "FIFA 💩",
