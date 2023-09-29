@@ -104,7 +104,9 @@ article {
     display: inline-block;
     overflow: hidden;
 }
-
+.card{
+    display: none;
+}
 .grid {
     width: 100%;
     display: grid;
@@ -220,6 +222,8 @@ footer ul {
         transform: none;
         box-shadow: none;
     }
-
+.card{
+    display:block;
+}
 
 }
