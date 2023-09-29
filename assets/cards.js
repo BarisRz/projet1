@@ -49,3 +49,16 @@ grids[0].innerHTML = displayHTML(gridOne);
 grids[1].innerHTML = displayHTML(gridTwo);
 grids[2].innerHTML = displayHTML(gridThree);
 grids[3].innerHTML = displayHTML(gridFour);
+
+
+
+/******** Carte déroulante **********/
+
+const cardInfos = document.querySelectorAll(".card");
+const photo = document.querySelectorAll(".grid-photo");
+
+for (let i = 0; i < photo.length; i++){
+    photo[i].addEventListener("click", function(){
+        cardInfos[i].classList.toggle("card")
+    })
+};

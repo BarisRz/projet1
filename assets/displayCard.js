@@ -1,20 +1,24 @@
 function createCard(card, i) {
     const html = `
     <article class="temp${i + 1}">
-        <img class="grid-photo" src="${card.img}" alt="">
-        <div class="card">
-            <h2>${card.name}</h2>
-            <p>${card.age}</p>
-            <p>${card.citation}</p>
+    
+    <img class="grid-photo" src="${card.img}" alt="">
+ 
+        <div class="card display">
+            <h2 class="margin-0">${card.name}</h2>
+            <p class="age margin-0">${card.age}</p>
+            <p class= "cit margin-0">${card.citation}</p>
             <h3>${card.objectif}</h3>
-            <p>${card.hobby1}</p>
-            <p>${card.hobby2}</p> 
-            <p>${card.hobby3}</p> 
-            <p>${card.hobby4}</p> 
-            <a href="${card.instagram}"><img src="./assets/instagram.svg" alt="" class="grid-icon"></a>
-            <a href="${card.linkedin}"><img src="./assets/linkedin.svg" alt="" class="grid-icon"></a>
-            <a href="${card.email}"><img src="./assets/envelope-solid.svg" alt="" class="grid-icon"></a>
-            <a href="${card.github}"><img src="./assets/github.svg" alt="" class="grid-icon"></a>
+            <p class= "hobbies" margin-0>${card.hobby1}</p>
+            <p class= "hobbies" margin-0>${card.hobby2}</p> 
+            <p class= "hobbies" margin-0>${card.hobby3}</p> 
+            <p class= "hobbies" margin-0>${card.hobby4}</p> 
+            <div class = "grid-icons-container margin-0">
+                <a href="${card.instagram}"><img src="./assets/instagram.svg" alt="" class="grid-icon"></a>
+                <a href="${card.linkedin}"><img src="./assets/linkedin.svg" alt="" class="grid-icon"></a>
+                <a href="${card.email}"><img src="./assets/envelope-solid.svg" alt="" class="grid-icon"></a>
+                <a href="${card.github}"><img src="./assets/github.svg" alt="" class="grid-icon"></a>
+            </div>
         </div>
     </article>
  `;
@@ -31,5 +35,6 @@ function displayHTML(arrayOfUsers) {
     }
     return grid;
 }
+
 
 export { displayHTML, createCard };
