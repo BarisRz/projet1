@@ -33,10 +33,10 @@ search.addEventListener("keyup", (event) => {
     grids[0].innerHTML = displayHTML(copyArr);
     copyArr2 = gridTwo.filter((wilder) => wilder.name.toLocaleLowerCase().includes(searchValue));
     grids[1].innerHTML = displayHTML(copyArr2);
-    copyArr2 = gridThree.filter((wilder) => wilder.name.toLocaleLowerCase().includes(searchValue));
-    /* grids[2].innerHTML = displayHTML(copyArr3);
-    copyArr2 = gridFour.filter((wilder) => wilder.name.toLocaleLowerCase().includes(searchValue));
-    grids[3].innerHTML = displayHTML(copyArr4); */
+    copyArr3 = gridThree.filter((wilder) => wilder.name.toLocaleLowerCase().includes(searchValue));
+    grids[2].innerHTML = displayHTML(copyArr3);
+    copyArr4 = gridFour.filter((wilder) => wilder.name.toLocaleLowerCase().includes(searchValue));
+    grids[3].innerHTML = displayHTML(copyArr4);
     if (event.keyCode === 13) {
         scrollToAnchor();
     }
@@ -45,5 +45,5 @@ search.addEventListener("keyup", (event) => {
 
 grids[0].innerHTML = displayHTML(gridOne);
 grids[1].innerHTML = displayHTML(gridTwo);
-/* grids[2].innerHTML = displayHTML(gridThree);
-grids[3].innerHTML = displayHTML(gridFour); */
+grids[2].innerHTML = displayHTML(gridThree);
+grids[3].innerHTML = displayHTML(gridFour);
