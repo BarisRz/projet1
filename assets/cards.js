@@ -57,8 +57,8 @@ grids[3].innerHTML = displayHTML(gridFour);
 const cardInfos = document.querySelectorAll(".card");
 const photo = document.querySelectorAll(".grid-photo");
 
-for (let i = 0; i < photo.length; i++){
-    photo[i].addEventListener("click", function(){
+for (let i = 0; i < photo.length; i++) {
+    photo[i].addEventListener("click", function () {
         cardInfos[i].classList.toggle("card")
     })
-};
+};  
