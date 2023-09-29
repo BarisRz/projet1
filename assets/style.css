@@ -35,14 +35,15 @@ nav {
     padding: 0.5rem;
     border: none;
     border-radius: 5px;
-    background-color: rgb(178, 206, 232); /* fond de la barre de recherche */
-    color: var(--primarycolor); 
+    background-color: rgb(178, 206, 232);
+    /* fond de la barre de recherche */
+    color: var(--primarycolor);
     font-size: 16px;
-    outline: none; 
+    outline: none;
     transition: background-color 0.5s, box-shadow 0.5s;
 }
 
-                    /* un effet de survol */
+/* un effet de survol */
 .search-input:hover {
     background-color: whitesmoke;
     box-shadow: 0 0 5px rgba(83, 83, 83, 0.5);
@@ -138,9 +139,11 @@ article {
     display: inline-block;
     overflow: hidden;
 }
-.card{
+
+.card {
     display: none;
 }
+
 .grid {
     width: 100%;
     display: grid;
@@ -256,8 +259,25 @@ footer ul {
         transform: none;
         box-shadow: none;
     }
-.card{
-    display:block;
-}
+
+    .card {
+        display: block;
+    }
+
+    /* nav */
+
+    nav {
+        flex-direction: row;
+        text-align: center;
+    }
+
+    .search-container {
+        margin-top: 1rem;
+    }
+
+    .search-input {
+        margin-right: 0;
+        width: 100%;
+    }
 
 }
