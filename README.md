@@ -1,9 +1,8 @@
-# GROUPE 5 - Projet 1 ⚠️⚠️ Nom du PROJET A DEFINIR ⚠️⚠️
+# Book des Wilders!
 
 # Description
 
-Projet réalisé dans le cadre de la formation Developpeur Web de la WildCodeSchool-sept23.
-!!!⚠️⚠️Description du site a faire⚠️⚠️!!!.
+Trombinoscope pour trouver rapidement toutes les infos sur un Wilder en particulier 🚀
 
 # Team
 
