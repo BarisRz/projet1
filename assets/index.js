@@ -52,7 +52,6 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
         const offset = -index * slideWidth;
-        console.log(offset)
         carouselContainer.style.transform = `translateX(${offset}px)`;
         currentIndex = index;
     }
