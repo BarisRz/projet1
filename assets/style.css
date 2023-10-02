@@ -39,7 +39,7 @@ nav {
     /* fond de la barre de recherche */
     color: var(--primarycolor);
     font-size: 16px;
-    outline: none;
+    outline: none; 
     transition: background-color 0.5s, box-shadow 0.5s;
 }
 
@@ -54,6 +54,14 @@ nav {
     box-shadow: 10px 5px 5px rgba(126, 147, 179, 0.8);
 }
 
+.togglesearch {
+    visibility: visible;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.toggleOff {
+    visibility: hidden;
+}
 
 /* fin barre de recherche */
 
@@ -72,14 +80,20 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 1vh 0 9vh 0;
+    /* width: 80vw;
+    max-height: 90vh;
+    overflow: hidden; */
 }
 
 .carousel {
-    width: 80vh;
-    max-height: 90vh;
+    width: 70vw;
+    max-height: 100%;
     overflow: hidden;
     position: relative;
     text-align: center;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    border: var(--thirdcolor) solid;
 }
 
 .carousel-container {
@@ -112,6 +126,10 @@ nav {
 
 .theContainer button:hover {
     background-color: var(--primarycolor);
+}
+
+.searchButton {
+    cursor: pointer;
 }
 
 /*fin section carrousel + header */
@@ -288,7 +306,6 @@ footer ul {
 /* Responsive */
 
 @media screen and (max-width: 660px) {
-
     /*********Buttons******/
     #prevButton,
     #nextButton {

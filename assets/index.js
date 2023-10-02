@@ -72,3 +72,11 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 /* DEBUT SEARCHBAR */
+
+const loop = document.querySelector(".searchButton");
+const toggleSearch = document.querySelector(".togglesearch");
+
+
+loop.addEventListener("click", () => {
+    toggleSearch.classList.toggle("toggleOff");
+});
