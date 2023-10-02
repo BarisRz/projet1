@@ -19,6 +19,6 @@ Trombinoscope pour trouver rapidement toutes les infos sur un Wilder en particul
 [![My Skills](https://skillicons.dev/icons?i=git,js,html,css,figma&theme=light)](https://skillicons.dev)
 # Organisation 
 
-    Trello : https://trello.com/b/xEDcQsum/projet-1-groupe-5
-    Discord
-    GitHub (forcement 🤓)
+- Trello : https://trello.com/b/xEDcQsum/projet-1-groupe-5
+- Discord
+- GitHub (forcement 🤓)
