@@ -32,7 +32,7 @@ for (let i = 0; i < photo.length; i++) {
 
 const loop = document.querySelector(".searchButton");
 const toggleSearch = document.querySelector(".togglesearch");
-const searchBarLocation = document.querySelector("#futursearchbar");
+const searchBarLocation = document.querySelector(".futursearchbar");
 
 
 function scrollToAnchor() {
@@ -52,11 +52,11 @@ loop.addEventListener("click", () => {
     searchBarLocation.innerHTML=`<div class="togglesearch toggleOff">
     <input type="search" class="search-input" placeholder="">
 </div>`;
+    searchBarLocation.classList.add('search-bar-visible');
     let copyArr = gridOne, copyArr2 = gridTwo, copyArr3 = gridThree, copyArr4 = gridFour;
     const search = document.querySelector(".search-input");
     search.addEventListener("keyup", (event) => {
         const searchValue = search.value.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLocaleLowerCase();
-        console.log(searchValue);
         copyArr = gridOne.filter((wilder) => wilder.name.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLocaleLowerCase().includes(searchValue));
         grids[0].innerHTML = displayHTML(copyArr);
         copyArr2 = gridTwo.filter((wilder) => wilder.name.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLocaleLowerCase().includes(searchValue));
@@ -71,9 +71,6 @@ loop.addEventListener("click", () => {
     });
 });
 
-search.addEventListener("change", (event) => {
-    console.log(event);
-})
 
 const test = document.querySelector('Jechoisisnimportequoi');
 console.log(typeof(test));
