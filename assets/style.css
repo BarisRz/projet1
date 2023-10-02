@@ -17,10 +17,15 @@ header {
     background: linear-gradient(180deg, var(--primarycolor) 0%, var(--secondarycolor)100%);
 }
 
+.triche {
+    padding: 4vh;
+}
+
 nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 /* barre de recherche */
@@ -60,31 +65,31 @@ nav {
     transition: opacity 0.5s ease-in-out;
 }
 
-.toggleOff {
+/* .toggleOff {
     visibility: hidden;
-}
+} */
 
 /* fin barre de recherche */
 
 .icon {
     height: 4rem;
-    color: white;
     margin: 1rem 1rem;
     transition: 0.3s;
 }
 
+.searchButton {
+    background-color: "#355f85";
+}
+
 .icon:hover {
-    filter: drop-shadow(0 0 0.3rem black);
+    filter: drop-shadow(2px 2px 9px #666);
 }
 
 .theContainer {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 1vh 0 9vh 0;
-    /* width: 80vw;
-    max-height: 90vh;
-    overflow: hidden; */
+    margin-bottom: 9vh;
 }
 
 .carousel {
