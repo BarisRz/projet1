@@ -70,13 +70,3 @@ document.addEventListener("DOMContentLoaded", function () {
         goToSlide(currentIndex + 1);
     }, 3000);
 });
-
-/* DEBUT SEARCHBAR */
-
-const loop = document.querySelector(".searchButton");
-const toggleSearch = document.querySelector(".togglesearch");
-
-
-loop.addEventListener("click", () => {
-    toggleSearch.classList.toggle("toggleOff");
-});
