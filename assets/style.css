@@ -160,17 +160,16 @@ main {
     margin: 0 auto;
     margin-top: 40px;
 }
-
-.grid-photo-container {
+/* .grid-photo-container{
     height: fit-content;
     width: auto;
-}
-
+} */
 .grid-photo {
+    box-sizing: border-box;
     width: 100%;
     height: 100%;
     mix-blend-mode: luminosity;
-    object-fit: cover; 
+    object-fit:cover; 
     z-index: 0;
 }
 
@@ -187,30 +186,26 @@ article {
         "temp1 temp1 temp2 temp3 temp3"
         "temp5 temp4 temp2 temp7 temp7"
         "temp5 temp4 temp2 temp7 temp7"
-        "temp5 temp6 temp6 temp7 temp7";
-
-    /*    grid-auto-rows: 150px; */
-    grid-template-columns: repeat(4, 1fr);
+        "temp5 temp6 temp6 temp7 temp7"
+        "temp5 temp6 temp6 temp8 temp8";
+    grid-auto-rows: 110px;
     grid-gap: 6px;
     overflow: hidden;
     object-fit: cover;
     margin-top: 6px;
 }
 
-
-
-.grid-photo:hover {
+.grid-photo:hover{
     transform: scale(1.05);
     object-fit: cover;
-    overflow: hidden;
     box-shadow: inset 0 0 0 var(--spr, calc(.5*(1 - var(--hov))*var(--l))) hsl(0, 0%, 40%);
     mix-blend-mode: multiply;
     transition: 3s;
-
-
 }
-
-
+/* .grid-photo:active{
+    mix-blend-mode:color;
+    overflow: hidden;
+} */
 .temp1 {
     grid-area: temp1;
 }
@@ -238,19 +233,13 @@ article {
 .temp7 {
     grid-area: temp7;
 }
+.temp8 {
+    grid-area: temp8;
+}
 
 
 
 /*fin section grid */
-/******** Carte déroulante IMG responsive **********/
-
-.open-img{
-    width: 50%;
-}
-
-.closed-img{
-    width: 100%;
-}
 
 /* cartes déroulantes */
 
@@ -264,7 +253,7 @@ article {
         "hobbies grid-icon";
     width: 100%;
     grid-template-columns: 2fr 1fr;
-    position: absolute; 
+    position: absolute;
     left: 14.5%;
     z-index: 1;
     width : 71vw;
@@ -321,8 +310,6 @@ span {
     padding: 10px 20px 0px 20px;
 }
 
-
-
 .hobbies-container {
     display: grid;
     grid-template-rows: 1fr 1fr;
@@ -334,7 +321,6 @@ span {
 .hobbies {
     max-width: 90%;
     text-align: start;
-    
 }
 
 .grid-icons-container {
@@ -343,9 +329,6 @@ span {
     grid-template-rows: 1fr 1fr;
     grid-area: grid-icon;
     width: 50%;
-   /*  position: absolute;
-    right: 20px;
-    bottom: 10px; */
     margin: auto 30px auto auto;
 }
 
@@ -360,15 +343,15 @@ span {
 }
 
 
-/* .left{
+/******** Carte déroulante IMG responsive **********/
 
-.left {
-    padding: 0 0 0 45%;
-} */
-
-
-
-
+.closed-img{
+    width: 100%;
+}
+.open-img{
+  height: 80%;
+  
+}
 /* fin cartes déroulantes */
 
 /* Début Footer */
@@ -376,8 +359,7 @@ footer {
     background-color: rgb(154, 186, 216);
     padding: 1rem;
     color: whitesmoke;
-    position: relative;
-    bottom: 0;
+    margin-top: 50px;
 }
 
 footer ul {
@@ -393,6 +375,7 @@ footer ul {
     margin: 0;
     padding: 0;
 }
+
 
 /* Fin Footer */
 
@@ -423,12 +406,10 @@ footer ul {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-areas:
-            "temp1 temp1"
-            "temp2 temp3"
-            "temp4 temp5"
-            "temp6 temp7";
-
-
+            "temp1 temp2"
+            "temp3 temp4"
+            "temp5 temp6"
+            "temp7 temp8";
     }
 
     .grid-photo {
@@ -447,7 +428,7 @@ footer ul {
     .display {
         width: 96vw;
         left: 2vw;
-
+        margin-top: -25px;
     }
 
     .hobbies {
@@ -466,6 +447,14 @@ footer ul {
     .grid-icon{
         fill: var(--primarycolor);
     }
+/******** Carte déroulante IMG responsive **********/
+
+    .closed-img{
+        width: 100%;
+    }
+    .open-img{
+      height: 95%;
+    } 
 
     /*barre de recherche responsive */
 
@@ -498,4 +487,5 @@ footer ul {
     #anchor {
         margin-top: 0;
     }
+
 }

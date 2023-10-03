@@ -1,7 +1,7 @@
 /**
  * Appel des fichiers externes
  */
-import { gridOne, gridTwo, gridThree, gridFour } from "./users.js";
+import { gridOne, gridTwo, gridThree } from "./users.js";
 import { displayHTML } from "./displayCard.js";
 
 /**
@@ -12,8 +12,6 @@ const grids = document.querySelectorAll(".grid");
 grids[0].innerHTML = displayHTML(gridOne);
 grids[1].innerHTML = displayHTML(gridTwo);
 grids[2].innerHTML = displayHTML(gridThree);
-grids[3].innerHTML = displayHTML(gridFour);
-
 
 
 /******** Carte déroulante **********/
@@ -37,7 +35,7 @@ for (let i = 0; i < photo.length; i++) {
 
 /* for (let i = 0; i < photo.length; i++) {
     photo[i].addEventListener("click", function () {
-        photo[i].classList.toggle("closed-img");
+        photo[i].classList.toggle("open-img");
     })
 };   */
 
@@ -52,7 +50,7 @@ loop.addEventListener("click", () => {
     <input type="search" class="search-input" placeholder="">
     </div>`;
     searchBarLocation.classList.add('search-bar-visible');
-    let copyArr = gridOne, copyArr2 = gridTwo, copyArr3 = gridThree, copyArr4 = gridFour;
+    let copyArr = gridOne, copyArr2 = gridTwo, copyArr3 = gridThree;
     const search = document.querySelector(".search-input");
     search.addEventListener("keyup", (event) => {
         const searchValue = search.value.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLocaleLowerCase();
@@ -62,8 +60,6 @@ loop.addEventListener("click", () => {
         grids[1].innerHTML = displayHTML(copyArr2);
         copyArr3 = gridThree.filter((wilder) => wilder.name.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLocaleLowerCase().includes(searchValue));
         grids[2].innerHTML = displayHTML(copyArr3);
-        copyArr4 = gridFour.filter((wilder) => wilder.name.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLocaleLowerCase().includes(searchValue));
-        grids[3].innerHTML = displayHTML(copyArr4);
         if (event.keyCode === 13) {
             const anchor = document.querySelector(".cards");
             anchor.scrollIntoView({behavior: "smooth", block: "start"});
