@@ -284,10 +284,8 @@ article {
 
 h2 {
     grid-area: name;
-    text-wrap: wrap;
     margin: 0;
     padding: 10px 10px 10px 30px;
-    font-family: ;
     font-size: 1.5rem;
     vertical-align: center;
     color: var(--primarycolor);
@@ -334,7 +332,6 @@ span {
 }
 
 .hobbies {
-    text-wrap: wrap;
     max-width: 90%;
     text-align: start;
     
