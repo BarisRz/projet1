@@ -20,20 +20,25 @@ grids[3].innerHTML = displayHTML(gridFour);
 
 const cardInfos = document.querySelectorAll(".card");
 const photo = document.querySelectorAll(".grid-photo");
-
+let compteur = 0;
 for (let i = 0; i < photo.length; i++) {
     photo[i].addEventListener("click", function () {
-        cardInfos[i].classList.toggle("card");
-    })
+        cardInfos[i].classList.remove("card");
+        for (let y = 0; y<photo.length; y++){
+            if (y===i){} else {
+                cardInfos[y].classList.add("card");
+            };
+        };
+    });
 };
 
 /******** Carte déroulante IMG responsive **********/
 
-for (let i = 0; i < photo.length; i++) {
+/* for (let i = 0; i < photo.length; i++) {
     photo[i].addEventListener("click", function () {
         photo[i].classList.toggle("closed-img");
     })
-};  
+};   */
 
 /* DEBUT SEARCHBAR */
 
@@ -56,7 +61,7 @@ function scrollToAnchor() {
 loop.addEventListener("click", () => {
     if (searchBarLocation.childNodes.length === 0){
     searchBarLocation.innerHTML=`<div>
-    <input type="search" class="search-input" placeholder="Chercher un wilders!">
+    <input type="search" class="search-input" placeholder="">
     </div>`;
     searchBarLocation.classList.add('search-bar-visible');
     let copyArr = gridOne, copyArr2 = gridTwo, copyArr3 = gridThree, copyArr4 = gridFour;
