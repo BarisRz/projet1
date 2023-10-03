@@ -39,7 +39,8 @@ nav {
     /* fond de la barre de recherche */
     color: var(--primarycolor);
     font-size: 16px;
-    outline: none; 
+    font-family: Montserrat;
+    outline: none;
     transition: background-color 0.5s, box-shadow 0.5s;
 }
 
@@ -306,6 +307,13 @@ footer ul {
 /* Responsive */
 
 @media screen and (max-width: 660px) {
+
+    /* Carousel */
+
+    .carousel {
+        width: 100vw;
+    }
+
     /*********Buttons******/
     #prevButton,
     #nextButton {
