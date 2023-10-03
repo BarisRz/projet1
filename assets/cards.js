@@ -25,7 +25,7 @@ for (let i = 0; i < photo.length; i++) {
     photo[i].addEventListener("click", function () {
         cardInfos[i].classList.toggle("card");
     })
-};  
+};
 
 /******** Carte déroulante IMG responsive **********/
 
@@ -38,7 +38,6 @@ for (let i = 0; i < photo.length; i++) {
 /* DEBUT SEARCHBAR */
 
 const loop = document.querySelector(".searchButton");
-const toggleSearch = document.querySelector(".togglesearch");
 const searchBarLocation = document.querySelector(".futursearchbar");
 
 
@@ -55,10 +54,10 @@ function scrollToAnchor() {
 }
 
 loop.addEventListener("click", () => {
-    /* toggleSearch.classList.toggle("toggleOff"); */
-    searchBarLocation.innerHTML=`<div class="togglesearch toggleOff">
-    <input type="search" class="search-input" placeholder="">
-</div>`;
+    if (searchBarLocation.childNodes.length === 0){
+    searchBarLocation.innerHTML=`<div>
+    <input type="search" class="search-input" placeholder="Chercher un wilders!">
+    </div>`;
     searchBarLocation.classList.add('search-bar-visible');
     let copyArr = gridOne, copyArr2 = gridTwo, copyArr3 = gridThree, copyArr4 = gridFour;
     const search = document.querySelector(".search-input");
@@ -75,9 +74,16 @@ loop.addEventListener("click", () => {
         if (event.keyCode === 13) {
             scrollToAnchor();
         }
+        const cardInfos = document.querySelectorAll(".card");
+        const photo = document.querySelectorAll(".grid-photo");
+
+        for (let i = 0; i < photo.length; i++) {
+        photo[i].addEventListener("click", function () {
+        cardInfos[i].classList.toggle("card")
+            })
+        };
     });
+    } else {
+    searchBarLocation.innerHTML="";
+};
 });
-
-
-const test = document.querySelector('Jechoisisnimportequoi');
-console.log(typeof(test));
