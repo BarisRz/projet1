@@ -453,4 +453,13 @@ footer ul {
     nav {
         height: 75px;
     }
+    .triche {
+        display: none;
+    }
+    .theContainer {
+        margin-bottom: 0;
+    }
+    #anchor {
+        margin-top: 0;
+    }
 }
