@@ -72,6 +72,7 @@ nav {
     transform: translateY(0);
     opacity: 1;
 }
+
 /* .toggleOff {
     visibility: hidden;
 } */
@@ -173,7 +174,7 @@ main {
 }
 
 article {
-   overflow: hidden;
+    overflow: hidden;
 }
 
 
@@ -246,10 +247,10 @@ article {
     
     display: grid;
     grid-template-areas:
-    "name age"
-    "cit cit "
-    "obj obj"
-    "hobbies grid-icon";
+        "name age"
+        "cit cit "
+        "obj obj"
+        "hobbies grid-icon";
     width: 100%;
     grid-template-columns: 2fr 1fr;
     position: absolute;
@@ -263,7 +264,7 @@ article {
 }
 
 .card {
-    display: none;    
+    display: none;
 }
 
 .margin-0 {
@@ -285,14 +286,15 @@ h3 {
     font-weight:500;
     text-align: start;
 }
-span{
+
+span {
     font-weight: 400;
     font-style: italic;
 }
 
 .age {
     grid-area: age;
-    max-width: 100%; 
+    max-width: 100%;
     text-align: end;
     padding: 10px 30px 10px 10px;
     font-size: 1.2rem;
@@ -308,7 +310,7 @@ span{
     padding: 10px 20px 0px 20px;
 }
 
-.hobbies-container{
+.hobbies-container {
     display: grid;
     grid-template-rows: 1fr 1fr;
     grid-area: hobbies;
@@ -321,7 +323,7 @@ span{
     text-align: start;
 }
 
-.grid-icons-container{
+.grid-icons-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -332,13 +334,14 @@ span{
 
 .grid-icon {
     margin-top: 15px;
-    width:2.5em;
+    width: 2.5em;
     height: 2.5em;
 }
 
-.grid-icon:hover{
+.grid-icon:hover {
     filter: drop-shadow(0 0 0.3rem rgb(46, 46, 46));
 }
+
 
 /******** Carte déroulante IMG responsive **********/
 
@@ -363,14 +366,16 @@ footer ul {
     display: flex;
     list-style-type: none;
     justify-content: space-around;
+    align-items: center;
 }
 
-.footer-icon{
-    width: 50px; 
+.footer-icon {
+    width: 50px;
     height: 25px;
     margin: 0;
     padding: 0;
 }
+
 
 /* Fin Footer */
 
@@ -417,21 +422,25 @@ footer ul {
         transform: none;
         box-shadow: none;
     }
+
     /***** Cartes déroulées *****/
-   
-    .display{
+
+    .display {
         width: 96vw;
-        left: 2vw; 
-        
+        left: 2vw;
+
     }
+
     .hobbies {
-      
+
         max-width: 85%;
-      
+
     }
-    .grid-icon:hover{
+
+    .grid-icon:hover {
         filter: none;
     }
+
     .grid-icons-container{
         width: 70%;
     }
