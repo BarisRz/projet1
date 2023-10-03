@@ -52,7 +52,6 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
         const offset = -index * slideWidth;
-        console.log(offset)
         carouselContainer.style.transform = `translateX(${offset}px)`;
         currentIndex = index;
     }
@@ -69,14 +68,4 @@ document.addEventListener("DOMContentLoaded", function () {
     setInterval(() => {
         goToSlide(currentIndex + 1);
     }, 3000);
-});
-
-/* DEBUT SEARCHBAR */
-
-const loop = document.querySelector(".searchButton");
-const toggleSearch = document.querySelector(".togglesearch");
-
-
-loop.addEventListener("click", () => {
-    toggleSearch.classList.toggle("toggleOff");
 });

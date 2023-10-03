@@ -9,6 +9,7 @@ body {
     margin: 0;
     box-sizing: border-box;
     background-color: var(--secondarycolor);
+    font-family: 'Montserrat', sans-serif;
 }
 
 /*section carrousel + header */
@@ -17,10 +18,17 @@ header {
     background: linear-gradient(180deg, var(--primarycolor) 0%, var(--secondarycolor)100%);
 }
 
+.triche {
+    padding: 4vh;
+}
+
 nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    background-color: var(--secondarycolor);
+    opacity: 0.7;
 }
 
 /* barre de recherche */
@@ -31,13 +39,12 @@ nav {
 }
 
 .search-input {
-    margin-right: 0.5rem;
     padding: 0.5rem;
     border: none;
     border-radius: 5px;
     background-color: rgb(178, 206, 232);
     /* fond de la barre de recherche */
-    color: var(--primarycolor);
+    color: black;
     font-size: 16px;
     font-family: Montserrat;
     outline: none;
@@ -55,36 +62,39 @@ nav {
     box-shadow: 10px 5px 5px rgba(126, 147, 179, 0.8);
 }
 
-.togglesearch {
-    visibility: visible;
-    transition: opacity 0.5s ease-in-out;
+.futursearchbar {
+    transform: translateY(-100%);
+    opacity: 0;
+    transition: 0.3s ease-in-out;
 }
 
-.toggleOff {
-    visibility: hidden;
+.search-bar-visible {
+    transform: translateY(0);
+    opacity: 1;
 }
+/* .toggleOff {
+    visibility: hidden;
+} */
 
 /* fin barre de recherche */
 
 .icon {
     height: 4rem;
-    color: white;
     margin: 1rem 1rem;
-    transition: 0.3s;
+    /* transition: transform 0.3s ease-in-out; */
+    transition: 0.2s ease-in-out;
 }
 
+
 .icon:hover {
-    filter: drop-shadow(0 0 0.3rem black);
+    filter: drop-shadow(2px 2px 3px #999999);
 }
 
 .theContainer {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 1vh 0 9vh 0;
-    /* width: 80vw;
-    max-height: 90vh;
-    overflow: hidden; */
+    margin-bottom: 9vh;
 }
 
 .carousel {
@@ -149,20 +159,20 @@ main {
     margin: 0 auto;
     margin-top: 40px;
 }
-
+.grid-photo-container{
+    height: fit-content;
+    width: auto;
+}
 .grid-photo {
     width: 100%;
     height: 100%;
     mix-blend-mode: luminosity;
-    object-fit: cover;
+    object-fit: cover; 
 }
 
 article {
-    display: inline-block;
-    overflow: hidden;
+   overflow: hidden;
 }
-
-
 
 
 .grid {
@@ -179,7 +189,7 @@ article {
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 6px;
     overflow: hidden;
-    object-fit: fill;
+    object-fit: cover;
     margin-top: 6px;
 }
 
@@ -234,15 +244,23 @@ article {
 .display {
     display: grid;
     grid-template-areas:
-        "name age"
-        "cit cit "
-        "obj grid-icon"
-        "hobbies grid-icon";
-    width: 100vw;
+    "name age"
+    "cit cit "
+    "obj obj"
+    "hobbies grid-icon";
+    width: 100%;
+    grid-template-columns: 2fr 1fr;
+    position: absolute; 
+    left: 15%;
+    z-index: 1; 
+    width : 70vw;
+    background-color: var(--secondarycolor);
+    box-shadow: 0px 2px 1px black;
+    padding: 10px 0 10px 0px;
 }
 
 .card {
-    display: none;
+    display: none;    
 }
 
 .margin-0 {
@@ -251,39 +269,74 @@ article {
 
 h2 {
     grid-area: name;
-    max-width: 25%;
-    background-color: red;
+    text-wrap: wrap;
     margin: 0;
-    padding: 0;
+    padding: 10px;
 }
 
 h3 {
-    grid-area: obj;
-    background-color: green;
+    grid-area: obj;  
+    padding: 10px; 
+    font-weight:500;
+    text-align: center;
+}
+span{
+    font-weight: 400;
+    font-style: italic;
 }
 
 .age {
     grid-area: age;
-    max-width: 100%;
-    background-color: blue;
+    max-width: 100%; 
+    text-align: end;
+    padding: 20px;
 }
 
 .cit {
     grid-area: cit;
-    background-color: antiquewhite;
+    text-align: center;
+    font-style: italic;
+    font-weight: lighter;
+}
+
+   
+
+.hobbies-container{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-area: hobbies;
+    grid-auto-flow: column;
+    padding: 10px;
 }
 
 .hobbies {
-    grid-area: hobbies;
-    background-color: aqua;
+    text-wrap: wrap;
+    max-width: 90%;
+    text-align: center;
 }
 
-
-.grid-icon {
-    width: 20px;
-    height: 20px;
+.grid-icons-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     grid-area: grid-icon;
 }
+
+.grid-icon {
+    margin-top: 15px;
+    width:2.5em;
+    height: 2.5em;
+}
+
+.grid-icon:hover{
+    filter: drop-shadow(0 0 0.3rem rgb(46, 46, 46));
+}
+
+.left{
+    padding: 0 0 0 45%;
+}
+
+
 
 
 /* fin cartes déroulantes */
@@ -293,15 +346,21 @@ footer {
     background-color: rgb(154, 186, 216);
     padding: 1rem;
     color: whitesmoke;
+    position: sticky;
 }
 
 footer ul {
     display: flex;
     list-style-type: none;
     justify-content: space-around;
-    font-family: 'Montserrat', sans-serif;
 }
 
+.footer-icon{
+    width: 50px; 
+    height: 25px;
+    margin: 0;
+    padding: 0;
+}
 /* Fin Footer */
 
 /* Responsive */
@@ -334,11 +393,13 @@ footer ul {
             "temp1 temp1"
             "temp2 temp3"
             "temp4 temp5"
-            "temp6 temp7"
+            "temp6 temp7";
+            
+
     }
 
     .grid-photo {
-        height: 25vh;
+        height: 20vh;
         object-fit: cover;
         mix-blend-mode: normal;
     }
@@ -347,20 +408,23 @@ footer ul {
         transform: none;
         box-shadow: none;
     }
-
-    /**** Nav ****/
-
-    nav {
-        flex-direction: row;
-        text-align: center;
+    /***** Cartes déroulées *****/
+   
+    .display{
+        width: 96vw;
+        left: 2vw; 
+        
+    }
+    .hobbies {
+      
+        max-width: 85%;
+      
+    }
+    .grid-icon:hover{
+        filter: none;
+    }
+    .left{
+        padding: 0 0 0 35%;
     }
 
-    .search-container {
-        margin-top: 1rem;
-    }
-
-    .search-input {
-        margin-right: 0;
-        width: 100%;
-    }
 }
