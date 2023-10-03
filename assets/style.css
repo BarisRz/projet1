@@ -449,11 +449,43 @@ footer ul {
     }
 /******** Carte déroulante IMG responsive **********/
 
-.closed-img{
-    width: 100%;
-}
-.open-img{
-  height: 95%;
-  
-}
+    .closed-img{
+        width: 100%;
+    }
+    .open-img{
+      height: 95%;
+    } 
+
+    /*barre de recherche responsive */
+
+    .search-container {
+        flex-direction: row;
+        text-align: center;
+    }
+
+    .search-input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .futursearchbar div {
+        display: flex;
+        margin-top: 10px;
+    }
+
+    /* nav */
+
+    nav {
+        height: 5rem;
+    }
+    .triche {
+        display: none;
+    }
+    .theContainer {
+        margin-bottom: 0;
+    }
+    #anchor {
+        margin-top: 0;
+    }
+
 }

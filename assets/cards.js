@@ -18,10 +18,11 @@ grids[2].innerHTML = displayHTML(gridThree);
 
 const cardInfos = document.querySelectorAll(".card");
 const photo = document.querySelectorAll(".grid-photo");
-let compteur = 0;
+let compteur1 = 0;
 for (let i = 0; i < photo.length; i++) {
     photo[i].addEventListener("click", function () {
         cardInfos[i].classList.remove("card");
+        cardInfos[i].scrollIntoView({behavior: 'smooth', block:"center"});
         for (let y = 0; y<photo.length; y++){
             if (y===i){} else {
                 cardInfos[y].classList.add("card");
@@ -43,19 +44,6 @@ for (let i = 0; i < photo.length; i++) {
 const loop = document.querySelector(".searchButton");
 const searchBarLocation = document.querySelector(".futursearchbar");
 
-
-function scrollToAnchor() {
-    const targetAnchor = document.querySelector("#anchor");
-
-    if (targetAnchor) {
-        // Utilisez la fonction scrollIntoView() pour faire défiler jusqu'à l'ancre
-        targetAnchor.scrollIntoView({
-            behavior: 'smooth',
-            block: 'start'
-        });
-    }
-}
-
 loop.addEventListener("click", () => {
     if (searchBarLocation.childNodes.length === 0){
     searchBarLocation.innerHTML=`<div>
@@ -73,18 +61,25 @@ loop.addEventListener("click", () => {
         copyArr3 = gridThree.filter((wilder) => wilder.name.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLocaleLowerCase().includes(searchValue));
         grids[2].innerHTML = displayHTML(copyArr3);
         if (event.keyCode === 13) {
-            scrollToAnchor();
+            const anchor = document.querySelector(".cards");
+            anchor.scrollIntoView({behavior: "smooth", block: "start"});
         }
         const cardInfos = document.querySelectorAll(".card");
         const photo = document.querySelectorAll(".grid-photo");
-
+        let compteur = 0;
         for (let i = 0; i < photo.length; i++) {
         photo[i].addEventListener("click", function () {
-        cardInfos[i].classList.toggle("card")
-            })
+            cardInfos[i].classList.remove("card");
+            cardInfos[i].scrollIntoView({behavior: 'smooth', block:"center"});
+            for (let y = 0; y<photo.length; y++){
+                if (y===i){} else {
+                    cardInfos[y].classList.add("card");
+                };
+            };
+        });
         };
     });
     } else {
     searchBarLocation.innerHTML="";
-};
+    };
 });
