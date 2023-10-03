@@ -23,10 +23,17 @@ const photo = document.querySelectorAll(".grid-photo");
 
 for (let i = 0; i < photo.length; i++) {
     photo[i].addEventListener("click", function () {
-        cardInfos[i].classList.toggle("card")
+        cardInfos[i].classList.toggle("card");
     })
 };  
 
+/******** Carte déroulante IMG responsive **********/
+
+for (let i = 0; i < photo.length; i++) {
+    photo[i].addEventListener("click", function () {
+        photo[i].classList.toggle("closed-img");
+    })
+};  
 
 /* DEBUT SEARCHBAR */
 

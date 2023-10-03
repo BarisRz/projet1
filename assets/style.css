@@ -168,6 +168,7 @@ main {
     height: 100%;
     mix-blend-mode: luminosity;
     object-fit: cover; 
+    z-index: 0;
 }
 
 article {
@@ -238,10 +239,20 @@ article {
 
 
 /*fin section grid */
+/******** Carte déroulante IMG responsive **********/
+
+.open-img{
+    width: 50%;
+}
+
+.closed-img{
+    width: 100%;
+}
 
 /* cartes déroulantes */
 
 .display {
+    
     display: grid;
     grid-template-areas:
     "name age"
@@ -251,12 +262,13 @@ article {
     width: 100%;
     grid-template-columns: 2fr 1fr;
     position: absolute; 
-    left: 15%;
-    z-index: 1; 
-    width : 70vw;
+    left: 14.5%;
+    z-index: 1;
+    width : 71vw;
     background-color: var(--secondarycolor);
-    box-shadow: 0px 2px 1px black;
+    box-shadow: 0px 3px 10px black;
     padding: 10px 0 10px 0px;
+    border-radius: 5px;
 }
 
 .card {
@@ -271,14 +283,18 @@ h2 {
     grid-area: name;
     text-wrap: wrap;
     margin: 0;
-    padding: 10px;
+    padding: 10px 10px 10px 30px;
+    font-family: ;
+    font-size: 1.5rem;
+    vertical-align: center;
+    color: var(--primarycolor);
 }
 
 h3 {
     grid-area: obj;  
-    padding: 10px; 
+    padding: 0px 30px 0px 30px; 
     font-weight:500;
-    text-align: center;
+    text-align: start;
 }
 span{
     font-weight: 400;
@@ -289,14 +305,18 @@ span{
     grid-area: age;
     max-width: 100%; 
     text-align: end;
-    padding: 20px;
+    padding: 10px 30px 10px 10px;
+    font-size: 1.2rem;
+    vertical-align: center !important;
+    
 }
 
 .cit {
     grid-area: cit;
     text-align: center;
     font-style: italic;
-    font-weight: lighter;
+    font-weight: 300; 
+    padding: 10px 20px 0px 20px;
 }
 
    
@@ -306,13 +326,14 @@ span{
     grid-template-rows: 1fr 1fr;
     grid-area: hobbies;
     grid-auto-flow: column;
-    padding: 10px;
+    padding: 0px 0px 0px 30px;
 }
 
 .hobbies {
     text-wrap: wrap;
     max-width: 90%;
-    text-align: center;
+    text-align: start;
+    
 }
 
 .grid-icons-container{
@@ -320,6 +341,11 @@ span{
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     grid-area: grid-icon;
+    width: 50%;
+   /*  position: absolute;
+    right: 20px;
+    bottom: 10px; */
+    margin: auto 30px auto auto;
 }
 
 .grid-icon {
@@ -332,9 +358,9 @@ span{
     filter: drop-shadow(0 0 0.3rem rgb(46, 46, 46));
 }
 
-.left{
+/* .left{
     padding: 0 0 0 45%;
-}
+} */
 
 
 
@@ -346,7 +372,8 @@ footer {
     background-color: rgb(154, 186, 216);
     padding: 1rem;
     color: whitesmoke;
-    position: sticky;
+    position: relative;
+    bottom: 0;
 }
 
 footer ul {
@@ -423,8 +450,11 @@ footer ul {
     .grid-icon:hover{
         filter: none;
     }
-    .left{
-        padding: 0 0 0 35%;
+    .grid-icons-container{
+        width: 70%;
+    }
+    .grid-icon{
+        fill: var(--primarycolor);
     }
 
 }
