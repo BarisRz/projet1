@@ -428,7 +428,7 @@ footer ul {
     .display {
         width: 96vw;
         left: 2vw;
-
+        margin-top: -25px;
     }
 
     .hobbies {
