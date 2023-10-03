@@ -22,6 +22,7 @@ let compteur1 = 0;
 for (let i = 0; i < photo.length; i++) {
     photo[i].addEventListener("click", function () {
         cardInfos[i].classList.remove("card");
+        photo[i].classList.add('grid-photoActif');
         cardInfos[i].scrollIntoView({behavior: 'smooth', block:"center"});
         for (let y = 0; y<photo.length; y++){
             if (y===i){} else {

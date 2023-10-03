@@ -200,8 +200,13 @@ article {
     object-fit: cover;
     box-shadow: inset 0 0 0 var(--spr, calc(.5*(1 - var(--hov))*var(--l))) hsl(0, 0%, 40%);
     mix-blend-mode: multiply;
-    transition: 3s;
+    transition: 0.3s ease-in-out;
 }
+
+.grid-photoActif{
+    mix-blend-mode: multiply;
+}
+
 /* .grid-photo:active{
     mix-blend-mode:color;
     overflow: hidden;
