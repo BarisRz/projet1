@@ -479,6 +479,11 @@ footer ul {
         margin-bottom: 10px;
     }
 
+    .futursearchbar div {
+        display: flex;
+        margin-top: 10px;
+    }
+
     /* nav */
 
     nav {
