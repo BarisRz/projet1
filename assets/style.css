@@ -346,6 +346,7 @@ footer {
     background-color: rgb(154, 186, 216);
     padding: 1rem;
     color: whitesmoke;
+    position: sticky;
 }
 
 footer ul {
@@ -354,6 +355,12 @@ footer ul {
     justify-content: space-around;
 }
 
+.footer-icon{
+    width: 50px; 
+    height: 25px;
+    margin: 0;
+    padding: 0;
+}
 /* Fin Footer */
 
 /* Responsive */
