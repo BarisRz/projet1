@@ -21,9 +21,11 @@ const photo = document.querySelectorAll(".grid-photo");
 let previous = 0;
 for (let i = 0; i < photo.length; i++) {
     photo[i].addEventListener("click", function () {
-        cardInfos[i].classList.toggle("card");
-        photo[i].classList.toggle('grid-photoActif');
-        cardInfos[i].scrollIntoView({behavior: 'smooth', block:"center"});
+
+        cardInfos[i].classList.remove("card");
+        photo[i].classList.add('grid-photoActif');
+        cardInfos[i].scrollIntoView({behavior: 'smooth', block:"end"});
+
         for (let y = 0; y<photo.length; y++){
             if (y===i){} else {
                 cardInfos[y].classList.add("card");
@@ -62,9 +64,11 @@ loop.addEventListener("click", () => {
         const photo = document.querySelectorAll(".grid-photo");
         for (let i = 0; i < photo.length; i++) {
         photo[i].addEventListener("click", function () {
-            cardInfos[i].classList.toggle("card");
-            photo[i].classList.toggle('grid-photoActif');
-            cardInfos[i].scrollIntoView({behavior: 'smooth', block:"center"});
+
+            cardInfos[i].classList.remove("card");
+            photo[i].classList.add('grid-photoActif');
+            cardInfos[i].scrollIntoView({behavior: 'smooth', block:"end"});
+
             for (let y = 0; y<photo.length; y++){
                 if (y===i){} else {
                     cardInfos[y].classList.add("card");
