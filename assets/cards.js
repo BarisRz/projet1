@@ -22,8 +22,8 @@ let previous = 0;
 for (let i = 0; i < photo.length; i++) {
     photo[i].addEventListener("click", function () {
 
-        cardInfos[i].classList.remove("card");
-        photo[i].classList.add('grid-photoActif');
+        cardInfos[i].classList.toggle("card");
+        photo[i].classList.toggle('grid-photoActif');
         cardInfos[i].scrollIntoView({behavior: 'smooth', block:"end"});
 
         for (let y = 0; y<photo.length; y++){
@@ -32,20 +32,8 @@ for (let i = 0; i < photo.length; i++) {
                 photo[y].classList.remove("grid-photoActif");
             };
         };
-        /* photo[i].addEventListener('click', function() {
-            cardInfos[i].classList.toggle('card');
-        }); */
     });
 };
-
- /******** Carte déroulante IMG responsive **********/
-
-/* for (let i = 0; i < photo.length; i++) {
-    photo[i].addEventListener("click", function () {
-        photo[i].classList.toggle("open-img");
-    })
-
-};    */
 
 /* DEBUT SEARCHBAR */
 
@@ -68,21 +56,17 @@ loop.addEventListener("click", () => {
         grids[1].innerHTML = displayHTML(copyArr2);
         copyArr3 = gridThree.filter((wilder) => wilder.name.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLocaleLowerCase().includes(searchValue));
         grids[2].innerHTML = displayHTML(copyArr3);
-        const allGrid = document.querySelectorAll(".grid");
-        allGrid.forEach((element) => {
-        })
         if (event.keyCode === 13) {
             const anchor = document.querySelector(".cards");
             anchor.scrollIntoView({behavior: "smooth", block: "start"});
         }
         const cardInfos = document.querySelectorAll(".card");
         const photo = document.querySelectorAll(".grid-photo");
-        let compteur = 0;
         for (let i = 0; i < photo.length; i++) {
         photo[i].addEventListener("click", function () {
 
-            cardInfos[i].classList.remove("card");
-            photo[i].classList.add('grid-photoActif');
+            cardInfos[i].classList.toggle("card");
+            photo[i].classList.toggle('grid-photoActif');
             cardInfos[i].scrollIntoView({behavior: 'smooth', block:"end"});
 
             for (let y = 0; y<photo.length; y++){
