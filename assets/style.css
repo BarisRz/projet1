@@ -209,10 +209,6 @@ article {
     height: 80%;
 }
 
-/* .grid-photo:active{
-    mix-blend-mode:color;
-    overflow: hidden;
-} */
 .temp1 {
     grid-area: temp1;
 }
@@ -446,6 +442,11 @@ footer ul {
         object-fit: cover;
         mix-blend-mode: normal;
         filter: grayscale(80%);
+    }
+    
+    .grid-photoActif{
+        border: 5px solid var(--primarycolor);
+        border-radius: 10px;
     }
 
     .grid-photo:hover {
