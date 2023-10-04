@@ -370,10 +370,10 @@ span {
     font-size: 1.1rem;
     color:whitesmoke;
     padding: 20px;
-    background-color: rgb(154, 186, 216);
+    background-color: rgba(65, 83, 100, 0.6);
     margin: 0 auto;
     border-radius: 7px;
-    border: 1px solid rgba(230, 234, 238, 0.2);
+    border: 1px solid rgba(230, 234, 238, 0.1);
    box-shadow: 0 0 0.2rem rgb(46, 46, 46);
     
 }
@@ -382,10 +382,9 @@ span {
 }
 
 footer {
-    background-color: rgb(154, 186, 216);
+    background-color: rgba(154, 186, 216, 0.6);
     padding: 1rem;
     color: whitesmoke;
-   
 }
 
 footer ul {
@@ -397,6 +396,11 @@ footer ul {
 footer a{
     text-decoration: none;
     color: whitesmoke;
+}
+footer a:hover{
+    text-decoration: none;
+    color: whitesmoke;
+    font-weight: 600;
 }
 
 .footer-icon {

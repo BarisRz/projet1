@@ -20,6 +20,7 @@ function createCard(card, i) {
     <a target="_blank" class="grid-icon" href="${card.github}"><img src="./assets/github.svg" alt="" ></a>
     </div>
     </div>
+    
     </article>
     `;
     return html
