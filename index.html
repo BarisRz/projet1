@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="./assets/modal.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -54,6 +55,18 @@
         </section>
     </main>
 
+    <div class="push">
+        <p class="more">. . .</p>
+        <button id="push">VOIR PLUS DE WILDERS</button>
+    </div>
+    <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <p>Some text in the Modal..</p>
+        </div>
+      </div>
+
     <footer>
         <ul>
             <li><a href="index.html">
@@ -64,8 +77,10 @@
             <li>Mentions légales</li>
         </ul>
     </footer>
+
     <script src="./assets/index.js" type="module"></script>
     <script src="./assets/cards.js" type="module"></script>
+    <script src="assets/modal.js" type="module" ></script>
 </body>
 
 </html>

@@ -36,13 +36,14 @@ for (let i = 0; i < photo.length; i++) {
     });
 };
 
-/******** Carte déroulante IMG responsive **********/
+ /******** Carte déroulante IMG responsive **********/
 
 /* for (let i = 0; i < photo.length; i++) {
     photo[i].addEventListener("click", function () {
         photo[i].classList.toggle("open-img");
     })
-}; */
+
+};    */
 
 /* DEBUT SEARCHBAR */
 
