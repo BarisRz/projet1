@@ -160,10 +160,7 @@ main {
     margin: 0 auto;
     margin-top: 40px;
 }
-/* .grid-photo-container{
-    height: fit-content;
-    width: auto;
-} */
+
 .grid-photo {
     box-sizing: border-box;
     width: 100%;
@@ -182,31 +179,36 @@ article {
     width: 100%;
     display: grid;
     grid-template-areas:
-        "temp1 temp1 temp2 temp3 temp3"
-        "temp1 temp1 temp2 temp3 temp3"
-        "temp5 temp4 temp2 temp7 temp7"
-        "temp5 temp4 temp2 temp7 temp7"
-        "temp5 temp6 temp6 temp7 temp7"
-        "temp5 temp6 temp6 temp8 temp8";
+        "temp1 temp1 temp2 temp2 temp3 temp3"
+        "temp1 temp1 temp2 temp2 temp3 temp3"
+        "temp5 temp4 temp2 temp2 temp7 temp7"
+        "temp5 temp4 temp2 temp2 temp7 temp7"
+        "temp5 temp6 temp6 temp6 temp7 temp7"
+        "temp5 temp6 temp6 temp6 temp8 temp8";
    
     max-height: 660px;
     grid-gap: 8px;
     overflow: hidden;
     object-fit: cover;
-    margin-top: 6px;
+    margin: 8px auto; 
 }
 
 .grid-photo:hover{
-    transform: scale(1.05);
+    transform: scale(0.95);
     object-fit: cover;
     box-shadow: inset 0 0 0 var(--spr, calc(.5*(1 - var(--hov))*var(--l))) hsl(0, 0%, 40%);
     mix-blend-mode: multiply;
     transition: 0.3s ease-in-out;
+    border-radius: 5px;
+    border: 1px solid var(--primarycolor);
 }
 
 .grid-photoActif{
+    transform: scale(0.95);
     mix-blend-mode: multiply;
-    height: 80%;
+    border-radius: 5px;
+    border: 1px solid var(--primarycolor);
+   /*  height: 90%; */
 }
 
 .temp1 {
@@ -357,7 +359,6 @@ span {
 }
 .push{
    padding: 0px 50px 70px 50px;
-   width: 50%;
    display: flex;
    flex-direction: column;
    margin: 0px auto;
@@ -374,7 +375,7 @@ span {
     border-radius: 7px;
     border: 1px solid rgba(230, 234, 238, 0.2);
    box-shadow: 0 0 0.2rem rgb(46, 46, 46);
-    ;
+    
 }
 #push:hover{
     background-color: var(--primarycolor);
@@ -392,6 +393,10 @@ footer ul {
     list-style-type: none;
     justify-content: space-around;
     align-items: center;
+}
+footer a{
+    text-decoration: none;
+    color: whitesmoke;
 }
 
 .footer-icon {
@@ -440,8 +445,9 @@ footer ul {
 
     .grid-photo {
         object-fit: cover;
+        max-height: 30vh;
         mix-blend-mode: normal;
-        filter: grayscale(80%);
+        filter: grayscale(90%);
     }
     
     .grid-photoActif{
