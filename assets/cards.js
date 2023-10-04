@@ -22,8 +22,8 @@ let previous = 0;
 for (let i = 0; i < photo.length; i++) {
     photo[i].addEventListener("click", function () {
 
-        cardInfos[i].classList.remove("card");
-        photo[i].classList.add('grid-photoActif');
+        cardInfos[i].classList.toggle("card");
+        photo[i].classList.toggle('grid-photoActif');
         cardInfos[i].scrollIntoView({behavior: 'smooth', block:"end"});
 
         for (let y = 0; y<photo.length; y++){
@@ -65,8 +65,8 @@ loop.addEventListener("click", () => {
         for (let i = 0; i < photo.length; i++) {
         photo[i].addEventListener("click", function () {
 
-            cardInfos[i].classList.remove("card");
-            photo[i].classList.add('grid-photoActif');
+            cardInfos[i].classList.toggle("card");
+            photo[i].classList.toggle('grid-photoActif');
             cardInfos[i].scrollIntoView({behavior: 'smooth', block:"end"});
 
             for (let y = 0; y<photo.length; y++){
