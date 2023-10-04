@@ -21,7 +21,7 @@ function createCard(card, i) {
     </div>
     </div>
     </article>
- `;
+    `;
     return html
 }
 
