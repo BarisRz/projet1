@@ -18,18 +18,23 @@ grids[2].innerHTML = displayHTML(gridThree);
 
 const cardInfos = document.querySelectorAll(".card");
 const photo = document.querySelectorAll(".grid-photo");
-let compteur1 = 0;
+let previous = 0;
 for (let i = 0; i < photo.length; i++) {
     photo[i].addEventListener("click", function () {
+
         cardInfos[i].classList.remove("card");
         photo[i].classList.add('grid-photoActif');
         cardInfos[i].scrollIntoView({behavior: 'smooth', block:"end"});
+
         for (let y = 0; y<photo.length; y++){
             if (y===i){} else {
                 cardInfos[y].classList.add("card");
                 photo[y].classList.remove("grid-photoActif");
             };
         };
+        /* photo[i].addEventListener('click', function() {
+            cardInfos[i].classList.toggle('card');
+        }); */
     });
 };
 
@@ -39,6 +44,7 @@ for (let i = 0; i < photo.length; i++) {
     photo[i].addEventListener("click", function () {
         photo[i].classList.toggle("open-img");
     })
+
 };    */
 
 /* DEBUT SEARCHBAR */
@@ -74,9 +80,11 @@ loop.addEventListener("click", () => {
         let compteur = 0;
         for (let i = 0; i < photo.length; i++) {
         photo[i].addEventListener("click", function () {
+
             cardInfos[i].classList.remove("card");
             photo[i].classList.add('grid-photoActif');
             cardInfos[i].scrollIntoView({behavior: 'smooth', block:"end"});
+
             for (let y = 0; y<photo.length; y++){
                 if (y===i){} else {
                     cardInfos[y].classList.add("card");
