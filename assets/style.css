@@ -435,10 +435,10 @@ footer ul {
             "temp3 temp4"
             "temp5 temp6"
             "temp7 temp8";
+        max-height: 100%;
     }
 
     .grid-photo {
-        height: 100%;
         object-fit: cover;
         mix-blend-mode: normal;
         filter: grayscale(80%);
