@@ -142,7 +142,7 @@ const gridTwo = [
         github: "https://github.com/samuelfaberdev",
     }, 
     {
-        img: "assets/img/grille/oceane.JPG",
+        img: "assets/img/grille/oceane.jpeg",
         name: "LAHOUAL Océane",
         age: "27 ans",
         citation: `"Rien n'arrive par hasard ! "`,
