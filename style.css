@@ -206,7 +206,6 @@ article {
 
 .grid-photoActif{
     transform: scale(0.95);
-    
     border-radius: 5px;
     border: 1px solid var(--primarycolor);
     filter: grayscale(0%);
