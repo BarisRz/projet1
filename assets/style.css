@@ -96,6 +96,7 @@ nav {
     justify-content: center;
     align-items: center;
     margin-bottom: 9vh;
+    padding-top: 5vh;
 }
 
 .carousel {
@@ -165,7 +166,7 @@ main {
     box-sizing: border-box;
     width: 100%;
     height: 100%;
-    mix-blend-mode: luminosity;
+    filter: grayscale(90%);
     object-fit:cover; 
     z-index: 0;
 }
@@ -197,18 +198,18 @@ article {
     transform: scale(0.95);
     object-fit: cover;
     box-shadow: inset 0 0 0 var(--spr, calc(.5*(1 - var(--hov))*var(--l))) hsl(0, 0%, 40%);
-    mix-blend-mode: multiply;
-    transition: 0.3s ease-in-out;
+    filter: grayscale(0%);
+    transition: 0.1s ease-in-out;
     border-radius: 5px;
     border: 1px solid var(--primarycolor);
 }
 
 .grid-photoActif{
     transform: scale(0.95);
-    mix-blend-mode: multiply;
+    
     border-radius: 5px;
     border: 1px solid var(--primarycolor);
-   /*  height: 90%; */
+    filter: grayscale(0%);
 }
 
 .temp1 {
@@ -451,7 +452,7 @@ footer a:hover{
         object-fit: cover;
         max-height: 30vh;
         mix-blend-mode: normal;
-        filter: grayscale(90%);
+        filter: grayscale(80%);
     }
     
     .grid-photoActif{
@@ -476,9 +477,7 @@ footer a:hover{
     }
 
     .hobbies {
-
         max-width: 85%;
-
     }
 
     .grid-icon:hover {
@@ -523,6 +522,12 @@ footer a:hover{
     }
     #anchor {
         margin-top: 0;
+    }
+
+    footer ul{
+        font-size: 0.9rem;
+        margin: 0 auto; 
+        padding: 0;
     }
 
 }
