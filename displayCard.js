@@ -1,7 +1,7 @@
 function createCard(card, i) {
     const html = `
     <article class="temp${i + 1}">
-    <img class="grid-photo closed-img" src="${card.img}" alt="">
+    <img class="grid-photo closed-img" src="${card.img}" alt="" width:"400" height: "400" >
     <div class="card display">
     <h2 class="margin-0">${card.name}</h2>
     <p class="age margin-0">${card.age}</p>

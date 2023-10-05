@@ -95,8 +95,9 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 9vh;
-    padding-top: 5vh;
+     margin-bottom: 9vh;
+    /* padding-top: 5vh; */ 
+    /* height: 100vh; */
 }
 
 .carousel {
@@ -206,7 +207,6 @@ article {
 
 .grid-photoActif{
     transform: scale(0.95);
-    
     border-radius: 5px;
     border: 1px solid var(--primarycolor);
     filter: grayscale(0%);
