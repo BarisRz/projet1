@@ -119,10 +119,7 @@ const gridOne = [
     linkedin: "https://www.linkedin.com/in/clement-femenias-5b7471279/",
     email: "mailto:femenias.c@gmail.com",
     github: "https://github.com/PinpinLaToupie",
-}
-
-
-    ];
+}];
 
 const gridTwo = [
     {
@@ -184,8 +181,7 @@ const gridTwo = [
         linkedin:"#",
         email: "mailto:chrispammel@gmail.com",
         github: "https://github.com/Chrisbrn2625",
-    }
-    ,
+    },
     {
         img: "assets/img/grille/jordan.jpeg",
         name: "MIEGER Jordan",
@@ -245,8 +241,7 @@ const gridTwo = [
         linkedin:"#",
         email: "mailto:pierre.colpart3@gmail.com",
         github: "#",
-    }
-];
+    }];
 
 const gridThree = [
     {
@@ -369,10 +364,7 @@ const gridThree = [
     linkedin:"#",
     email: "mailto:diogo596@hotmail.fr",
     github: "https://github.com/diogo596",
-}
-];
-
- 
+}];
 
 export {
     gridOne, gridTwo, gridThree

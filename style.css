@@ -73,16 +73,11 @@ nav {
     opacity: 1;
 }
 
-/* .toggleOff {
-    visibility: hidden;
-} */
-
 /* fin barre de recherche */
 
 .icon {
     height: 4rem;
     margin: 1rem 1rem;
-    /* transition: transform 0.3s ease-in-out; */
     transition: 0.2s ease-in-out;
 }
 
@@ -96,8 +91,6 @@ nav {
     justify-content: center;
     align-items: center;
      margin-bottom: 9vh;
-    /* padding-top: 5vh; */ 
-    /* height: 100vh; */
 }
 
 .carousel {
@@ -176,7 +169,6 @@ article {
     overflow: hidden;
 }
 
-
 .grid {
     width: 100%;
     display: grid;
@@ -244,14 +236,11 @@ article {
     grid-area: temp8;
 }
 
-
-
 /*fin section grid */
 
 /* cartes déroulantes */
 
 .display {
-    
     display: grid;
     grid-template-areas:
         "name age"
@@ -348,8 +337,6 @@ span {
 .grid-icon:hover {
     filter: drop-shadow(0 0 0.3rem rgb(46, 46, 46));
 }
-
-
 /* fin cartes déroulantes */
 
 /* Début Footer */
@@ -411,14 +398,11 @@ footer a:hover{
     margin: 0;
     padding: 0;
 }
-
-
 /* Fin Footer */
 
 /* Responsive */
 
 @media screen and (max-width: 660px) {
-
     /* Carousel */
 
     .carousel {
@@ -468,8 +452,6 @@ footer a:hover{
         transform: none;
         box-shadow: none;
     }
-
-
     /***** Cartes déroulées *****/
 
     .display {
@@ -509,7 +491,6 @@ footer a:hover{
         display: flex;
         margin-top: 10px;
     }
-
     /* nav */
 
     nav {
@@ -530,5 +511,4 @@ footer a:hover{
         margin: 0 auto; 
         padding: 0;
     }
-
 }
