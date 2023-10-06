@@ -1,7 +1,7 @@
 function createCard(card, i) {
     const html = `
     <article class="temp${i + 1}">
-    <img class="grid-photo closed-img" src="${card.img}" alt="" width:"400" height: "400" >
+    <img class="grid-photo closed-img" src="${card.img}" alt="La photo d'un de nos Wilders !" width:"400" height: "400" >
     <div class="card display">
     <h2 class="margin-0">${card.name}</h2>
     <p class="age margin-0">${card.age}</p>
@@ -20,7 +20,6 @@ function createCard(card, i) {
     <a target="_blank" class="grid-icon" href="${card.github}"><img src="./assets/github.svg" alt="" ></a>
     </div>
     </div>
-    
     </article>
     `;
     return html
@@ -36,6 +35,5 @@ function displayHTML(arrayOfUsers) {
     }
     return grid;
 }
-
 
 export { displayHTML, createCard };

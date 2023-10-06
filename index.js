@@ -1,5 +1,4 @@
 // carousel //
-
 const imgCarrousel = [
     "assets/img/carrousel/Anthony.png",
     "assets/img/carrousel/Samuel.png",
