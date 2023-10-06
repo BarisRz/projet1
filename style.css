@@ -185,7 +185,8 @@ article {
         "temp1 temp1 temp2 temp2 temp3 temp3"
         "temp5 temp4 temp2 temp2 temp7 temp7"
         "temp5 temp4 temp2 temp2 temp7 temp7"
-        "temp5 temp6 temp6 temp6 temp7 temp7"
+        "temp5 temp4 temp2 temp2 temp7 temp7"
+        "temp5 temp6 temp6 temp6 temp8 temp8"
         "temp5 temp6 temp6 temp6 temp8 temp8";
    
     max-height: 660px;
@@ -396,7 +397,7 @@ footer ul {
 }
 footer a{
     text-decoration: none;
-    color: whitesmoke;
+    color: #f5f5f5;
 }
 footer a:hover{
     text-decoration: none;
