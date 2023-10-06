@@ -371,19 +371,19 @@ span {
     font-size: 1.1rem;
     color:whitesmoke;
     padding: 20px;
-    background-color: rgba(65, 83, 100, 0.6);
     margin: 0 auto;
     border-radius: 7px;
     border: 1px solid rgba(230, 234, 238, 0.1);
-   box-shadow: 0 0 0.2rem rgb(46, 46, 46);
+    box-shadow: 0 0 0.2rem rgb(46, 46, 46);
+    background-color: var(--primarycolor);
     
 }
 #push:hover{
-    background-color: var(--primarycolor);
+    background-color: rgba(65, 83, 100, 0.6);
 }
 
 footer {
-    background-color: rgba(154, 186, 216, 0.6);
+    background-color: var(--primarycolor);
     padding: 1rem;
     color: whitesmoke;
 }
